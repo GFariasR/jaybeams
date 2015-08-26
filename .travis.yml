@@ -38,6 +38,8 @@ before_script:
   - if [ "x${VARIANT}" == "xcov" ]; then lcov --directory . --zerocounters; fi
 
 script:
+   - cat ${TRAVIS_BUILD_DIR?}/cov-int/scm_log.txt;
+   - cat ${TRAVIS_BUILD_DIR?}/cov-int/build_log.txt"
   - echo CXX=${CXX?} CXXFLAGS=${CXXFLAGS?} GENDOCS=${GENDOCS?}
   - ${CXX?} --version
   - echo ${CXXFLAGS?}
@@ -62,8 +64,9 @@ addons:
       name: "coryan/jaybeams"
       description: "Build submitted via Travis CI"
     notification_email: coryan@users.noreply.github.com
-    build_command_prepend: "source ci/before_script.sh; ./bootstrap; ./configure; cov-configure --comptype clangcxx --compiler ${CXX}"
+    build_command_prepend: "source ci/before_script.sh; ./bootstrap; ./configure; cov-configure --comptype clangcxx --compiler ${CXX} --template"
     build_command:   "make check"
+    build_command_append: 
     branch_pattern: coverity-scan
 
 env:
