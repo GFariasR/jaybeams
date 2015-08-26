@@ -62,7 +62,7 @@ addons:
       name: "coryan/jaybeams"
       description: "Build submitted via Travis CI"
     notification_email: coryan@users.noreply.github.com
-    build_command_prepend: "source ci/before_script.sh; ./configure;"
+    build_command_prepend: "source ci/before_script.sh; ./bootstrap; ./configure;"
     build_command:   "make"
     branch_pattern: coverity-scan
 
