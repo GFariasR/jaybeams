@@ -56,6 +56,16 @@ after_success:
 notifications:
   email: false
 
+addons:
+  coverity_scan:
+    project:
+      name: "coryan/jaybeams"
+      description: "Build submitted via Travis CI"
+    notification_email: coryan@users.noreply.github.com
+    build_command_prepend: "source ci/before_script.sh; ./configure;"
+    build_command:   "make"
+    branch_pattern: coverity-scan
+
 env:
   matrix:
    - COMPILER=gcc   VERSION=-4.9  VARIANT=opt  GENDOCS=no
@@ -63,5 +73,9 @@ env:
    - COMPILER=clang VERSION=-3.6  VARIANT=dbg  GENDOCS=yes
    - COMPILER=clang VERSION=-3.6  VARIANT=opt  GENDOCS=no
   global:
-# TODO(#1) change this to a robot account
+    # This token defines GIT_NAME, GIT_EMAIL and GH_TOKEN to push
+    # generated docs to github
+    # TODO(#1) change this to a robot account
     - secure: "n9xlk1SpwtyBBB/U3B+o7EQomk4wPS+lj+9pYQCJwLkmR4Yh6hoz/bsl5vlYYK1V6xFhAaXqPWBnQmhrsIf8lOWqqrKCOPFsJ1AxDgPY3zFt+G91BqOuaTSG2eCbnyEVPidBchaUTeg2NiOpCAHyzA17h65c1Hl4l6IBUWGpYft5MWZhkeYz5r0bP2KAIb2NWRhuAW3PYxmFArWhBpnTICMx7rXzYWYCPUiXYra2JNebS1JAp+4JPly0efvNNjtjv4dyxq8qMdTDgz5Kj9wGo8ByPpseyWgx5Il0SSHmeUN5/NhJj4Wx2lVjOSv/EfoFmDN86V+P2zCwkl0tKV8sYONNvAIDqPDadRfQhbUAAFidSYiS2O6ttbInxegs3jStus/jxD0Myn8BgvOgddPbe1p0WFhCtcPDPA5J9/ic8M1NclYlMp04QNED+PnxxVt94tTmU7zCsNGXX4rxa7B1Q4EjTvEmjtvPA99kBla8JGOOxws8Xo5+WkfWVfbinveqs6G3kqg2bKTcurvgCeT7gqc/uVymdti7xdn+xALfzSohH91qN/T0Md1NVBJOlIN+J6oQ+qmZMcTQ6RrPOKDKPqcFTgpp5Np/lvq0yMUL7s+rS544hXZvtZ96E25wCorbJv6DVl0m5D1crBsJGmMzYfcGtRc8smTpF4+YcRkUIfc="
+    # This is the token for Coverity
+    - secure: "gTW6ZB1C/gEHCTkViXOhjkQ6qH8S6KYoLVlBTSEBGwmxmO5c7LbMXgHiubrfuxoHMUCacjQzaRGmXC9DUn4cIpwTmQV4cbt0ARupAR53aktlzqRejDQloB4HC16BzwfTDutQDO2XtMhMUDCXM+GuTwY+rasthRsVCA4bVtlCdApXnZ7eo0/6WskOKAf9Pfk+gy3YdYg9xy58PdMdNtoIVsV/zKdZrbTV1+eYf9BxTjrkW+J1yNNi2bOmSh4C4rek0Qqg5tVT9w1vsuHEaF/o7858dEB+uyn/Pej6lsaTolWqEfudbsZrFubFx6QAImHfnnJxKhEBUS3mB8XqwvJamULGOhl0JWl4TK4+t/FKTrHJ+/EiLvgc0l+UAVYpLMCf0/abRsNMU/MvfJ+0c8TaNX540emoRG9oUrnn4Wn6XmsXU9TlwCH155/QeGww0n+R10NZ1/Rhuj1bcMjNj+rZYxXWf7iHZSWbxu1DQ4qDHntO6RyR2agGEwXesGA0GxFFvaiBTWtHGnl4WpmcfecdORi7F6OygPllWU9IPHtN3eXDh96fZDVUllVBFYIdrYU2F7g00FEpCVPOcn8pi+/RcXTPEF3fZhbUFNzRfy5Xsyx3Ppuk+uoHbbbKZRkiGRU2PMwa254ZPcdE3jn4DNWWV/csBsZN+4AtGJcCW/v59B4="
