@@ -68,9 +68,9 @@ addons:
 
 env:
   matrix:
-   - COMPILER=gcc   VERSION=-4.9  VARIANT=opt  GENDOCS=no
-   - COMPILER=gcc   VERSION=-4.9  VARIANT=cov  GENDOCS=no
-   - COMPILER=clang VERSION=-3.6  VARIANT=dbg  GENDOCS=yes
+#   - COMPILER=gcc   VERSION=-4.9  VARIANT=opt  GENDOCS=no
+#   - COMPILER=gcc   VERSION=-4.9  VARIANT=cov  GENDOCS=no
+#   - COMPILER=clang VERSION=-3.6  VARIANT=dbg  GENDOCS=yes
    - COMPILER=clang VERSION=-3.6  VARIANT=opt  GENDOCS=no
   global:
     # This token defines GIT_NAME, GIT_EMAIL and GH_TOKEN to push
