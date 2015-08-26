@@ -63,7 +63,7 @@ addons:
       description: "Build submitted via Travis CI"
     notification_email: coryan@users.noreply.github.com
     build_command_prepend: "source ci/before_script.sh; ./bootstrap; ./configure; cov-configure --comptype clangcxx --compiler ${CXX}"
-    build_command:   "make"
+    build_command:   "make check"
     branch_pattern: coverity-scan
 
 env:
