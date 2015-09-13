@@ -5,11 +5,23 @@
  */
 
 /**
+ * @namespace jb::fftw
+ *
+ * Wrappers for the FFTW3 library.
+ */
+
+/**
  * @namespace jb::itch5
  *
  * Contains classes and functions to parse NASDAQ ITCH-5.0 messages,
  * more information about ITCH-5.0 can be found at:
  *  http://www.nasdaqtrader.com/content/technicalsupport/specifications/dataproducts/NQTVITCHSpecification.pdf
+ */
+
+/**
+ * @namespace jb::itch5::testing
+ *
+ * Functions used in testing jb::itch5 entities.
  */
 
 /**
@@ -28,6 +40,12 @@
  * @namespace jb::examples::defaults
  *
  * Default values for configuration parameters in the examples.
+ */
+
+/**
+ * @namespace jb::testing
+ *
+ * Helper functions and classes to simplify unit tests.        
  */
 
 /**

@@ -3,41 +3,16 @@
 instdir = $(prefix)/lib
 inst_LIBRARIES = \
   jb/libjb.a \
+  jb/libjb_fftw.a \
   jb/libitch5.a
 
-unit_tests = \
-  jb/itch5/ut_add_order_message \
-  jb/itch5/ut_add_order_mpid_message \
-  jb/itch5/ut_base_decoders \
-  jb/itch5/ut_broken_trade_message \
-  jb/itch5/ut_char_list_field \
-  jb/itch5/ut_char_list_validator \
-  jb/itch5/ut_cross_trade_message \
-  jb/itch5/ut_cross_type \
-  jb/itch5/ut_decoder \
-  jb/itch5/ut_ipo_quoting_period_update_message \
-  jb/itch5/ut_market_participant_position_message \
-  jb/itch5/ut_message_header \
-  jb/itch5/ut_mwcb_breach_message \
-  jb/itch5/ut_mwcb_decline_level_message \
-  jb/itch5/ut_net_order_imbalance_indicator_message \
-  jb/itch5/ut_order_cancel_message \
-  jb/itch5/ut_order_delete_message \
-  jb/itch5/ut_order_executed_message \
-  jb/itch5/ut_order_executed_price_message \
-  jb/itch5/ut_order_replace_message \
-  jb/itch5/ut_p2ceil \
-  jb/itch5/ut_price_field \
-  jb/itch5/ut_reg_sho_restriction_message \
-  jb/itch5/ut_seconds_field \
-  jb/itch5/ut_short_string_field \
-  jb/itch5/ut_static_digits \
-  jb/itch5/ut_stock_directory_message \
-  jb/itch5/ut_stock_trading_action_message \
-  jb/itch5/ut_system_event_message \
-  jb/itch5/ut_timestamp \
-  jb/itch5/ut_trade_message \
+noinst_LIBRARIES = \
+  jb/libjb_testing.a \
+  jb/libitch5_testing.a
+
+jb_unit_tests = \
   jb/ut_as_hhmmss \
+  jb/ut_assert_throw \
   jb/ut_config_files_location \
   jb/ut_config_object \
   jb/ut_event_rate_estimator \
@@ -49,13 +24,73 @@ unit_tests = \
   jb/ut_histogram_summary \
   jb/ut_integer_range_binning \
   jb/ut_logging \
+  jb/ut_offline_feed_statistics \
   jb/ut_severity_level \
   jb/ut_strtonum
 
-examples = \
-  examples/configuration
+jb_fftw_unit_tests = \
+  jb/fftw/ut_allocator \
+  jb/fftw/ut_plan \
+  jb/fftw/ut_time_delay_estimator \
+  jb/fftw/ut_traits
 
-noinst_PROGRAMS = $(examples)
+jb_itch5_unit_tests = \
+  jb/itch5/ut_add_order_message \
+  jb/itch5/ut_add_order_mpid_message \
+  jb/itch5/ut_base_decoders \
+  jb/itch5/ut_broken_trade_message \
+  jb/itch5/ut_char_list_field \
+  jb/itch5/ut_char_list_validator \
+  jb/itch5/ut_compute_inside \
+  jb/itch5/ut_cross_trade_message \
+  jb/itch5/ut_cross_type \
+  jb/itch5/ut_decoder \
+  jb/itch5/ut_ipo_quoting_period_update_message \
+  jb/itch5/ut_market_participant_position_message \
+  jb/itch5/ut_message_header \
+  jb/itch5/ut_mwcb_breach_message \
+  jb/itch5/ut_mwcb_decline_level_message \
+  jb/itch5/ut_net_order_imbalance_indicator_message \
+  jb/itch5/ut_order_book \
+  jb/itch5/ut_order_cancel_message \
+  jb/itch5/ut_order_delete_message \
+  jb/itch5/ut_order_executed_message \
+  jb/itch5/ut_order_executed_price_message \
+  jb/itch5/ut_order_replace_message \
+  jb/itch5/ut_p2ceil \
+  jb/itch5/ut_price_field \
+  jb/itch5/ut_process_buffer_mlist \
+  jb/itch5/ut_process_iostream_mlist \
+  jb/itch5/ut_reg_sho_restriction_message \
+  jb/itch5/ut_seconds_field \
+  jb/itch5/ut_short_string_field \
+  jb/itch5/ut_static_digits \
+  jb/itch5/ut_stock_directory_message \
+  jb/itch5/ut_stock_trading_action_message \
+  jb/itch5/ut_system_event_message \
+  jb/itch5/ut_timestamp \
+  jb/itch5/ut_trade_message
+
+jb_testing_unit_tests = \
+  jb/testing/ut_create_square_timeseries \
+  jb/testing/ut_create_triangle_timeseries \
+  jb/testing/ut_delay_timeseries \
+  jb/testing/ut_microbenchmark_config
+
+unit_tests = $(jb_unit_tests) $(jb_testing_unit_tests) \
+  $(jb_fftw_unit_tests) $(jb_itch5_unit_tests)
+
+benchmarks = \
+  jb/fftw/bm_time_delay_estimator \
+  jb/bm_clocks
+
+examples = \
+  examples/fftw_correlation_no_wrappers \
+  examples/configuration \
+  tools/itch5inside \
+  tools/itch5stats
+
+noinst_PROGRAMS = $(examples) $(benchmarks)
 
 check_PROGRAMS = $(unit_tests)
 TESTS = $(check_PROGRAMS)
@@ -63,15 +98,25 @@ TESTS = $(check_PROGRAMS)
 AM_CXXFLAGS = \
   -DJB_SYSCONFDIR=\"$(sysconfdir)\" \
   -DJB_BINDIR=\"$(bindir)\" \
-  $(YAML_CPP_CFLAGS) \
+  $(FFTW3_CPPFLAGS) \
+  $(FFTW3F_CPPFLAGS) \
+  $(FFTW3L_CPPFLAGS) \
+  $(YAML_CPP_CPPFLAGS) \
   $(BOOST_CPPFLAGS) \
   -DBOOST_LOG_DYN_LINK \
   $(PTHREAD_CFLAGS)
 
 LDFLAGS = \
+  $(FFTW3_LDFLAGS) \
+  $(FFTW3F_LDFLAGS) \
+  $(FFTW3L_LDFLAGS) \
+  $(YAML_CPP_LDFLAGS) \
   $(BOOST_LDFLAGS)
 
-YAML_CPP_LIBS=-lyaml-cpp
+YAML_CPP_LIBS=@YAML_CPP_LIBS@
+FFTW3_LIBS=@FFTW3_LIBS@
+FFTW3F_LIBS=@FFTW3F_LIBS@
+FFTW3L_LIBS=@FFTW3L_LIBS@
 
 LIBS = \
   $(YAML_CPP_LIBS) \
@@ -95,10 +140,22 @@ jb_ut_libs = \
   jb/libjb.a \
   $(BOOST_UNIT_TEST_FRAMEWORK_LIB)
 
+jb_ut_testing_libs = \
+  jb/libjb_testing.a \
+  $(jb_ut_libs)
+
 jb_ut_itch5_libs = \
+  jb/libitch5_testing.a \
   jb/libitch5.a \
-  jb/libjb.a \
-  $(BOOST_UNIT_TEST_FRAMEWORK_LIB)
+  $(jb_ut_libs)
+
+jb_ut_fftw_libs = \
+  $(FFTW3_LIBS) \
+  $(FFTW3F_LIBS) \
+  $(FFTW3L_LIBS) \
+  jb/libjb_testing.a \
+  jb/libjb_fftw.a \
+  $(jb_ut_libs)
 
 ################################################################
 # jb/libjb.a
@@ -107,6 +164,8 @@ jb_ut_itch5_libs = \
 jb_libjb_adir = $(includedir)
 nobase_jb_libjb_a_HEADERS = \
   jb/as_hhmmss.hpp \
+  jb/assert_throw.hpp \
+  jb/complex_traits.hpp \
   jb/config_attribute.hpp \
   jb/config_files_location.hpp \
   jb/config_object.hpp \
@@ -121,23 +180,78 @@ nobase_jb_libjb_a_HEADERS = \
   jb/histogram_summary.hpp \
   jb/integer_range_binning.hpp \
   jb/log.hpp \
+  jb/offline_feed_statistics.hpp \
   jb/severity_level.hpp \
   jb/strtonum.hpp \
   jb/usage.hpp
+
 jb_libjb_a_SOURCES = \
   jb/as_hhmmss.cpp \
+  jb/assert_throw.cpp \
   jb/config_files_location.cpp \
   jb/config_object.cpp \
   jb/fileio.cpp \
   jb/filetype.cpp \
   jb/histogram_summary.cpp \
   jb/log.cpp \
+  jb/offline_feed_statistics.cpp \
   jb/severity_level.cpp
 
 jb_libjb_a_LIBADD = 
 
 ################################################################
-# jb/libmo.a
+# jb/libjb_testing.a
+################################################################
+
+jb_libjb_testing_adir = $(includedir)
+jb_libjb_testing_a_SOURCES = \
+  jb/testing/compile_info.cpp \
+  jb/testing/microbenchmark_base.cpp \
+  jb/testing/microbenchmark_config.cpp
+
+jb_libjb_testing_a_HEADERS = \
+  jb/testing/check_array_close_enough.hpp \
+  jb/testing/check_complex_close_enough.hpp \
+  jb/testing/check_vector_close_enough.hpp \
+  jb/testing/create_square_timeseries.hpp \
+  jb/testing/create_triangle_timeseries.hpp \
+  jb/testing/delay_timeseries.hpp \
+  jb/testing/microbenchmark.hpp \
+  jb/testing/microbenchmark_base.hpp \
+  jb/testing/microbenchmark_config.hpp
+
+jb/testing/compile_info.cpp: jb/testing/compile_info.hpp
+	$(AM_V_GEN)echo '#include <jb/testing/compile_info.hpp>' >$@; \
+	echo '' >>$@; \
+	echo 'char const jb::testing::uname_a[] = R"""(' >>$@; \
+	uname -a >>$@; \
+	echo ')""";' >> $@; \
+	echo '' >>$@; \
+	echo 'char const jb::testing::compiler[] = R"""(' >>$@; \
+	$(CXX) --version >>$@; \
+	echo ')""";' >> $@; \
+	echo '' >>$@; \
+	echo 'char const jb::testing::compiler_flags[] = R"""(' >>$@; \
+	echo $(CXXFLAGS) >>$@; \
+	echo ')""";' >> $@; \
+	echo '' >>$@; \
+	echo 'char const jb::testing::linker[] = R"""(' >>$@; \
+	$(CXX) -Wl,--version >>$@; \
+	echo ')""";' >> $@; \
+	echo '' >>$@
+
+################################################################
+# jb/libitch5_testing.a
+################################################################
+
+jb_libitch5_testing_adir = $(includedir)
+jb_libitch5_testing_a_SOURCES = \
+  jb/itch5/testing_data.cpp
+jb_libitch5_testing_a_HEADERS = \
+  jb/itch5/testing_data.hpp
+
+################################################################
+# jb/libitch5.a
 ################################################################
 
 jb_libitch5_adir = $(includedir)
@@ -149,6 +263,7 @@ jb_libitch5_a_SOURCES = \
   jb/itch5/base_decoders.cpp \
   jb/itch5/broken_trade_message.cpp \
   jb/itch5/char_list_validator.cpp \
+  jb/itch5/compute_inside.cpp \
   jb/itch5/cross_trade_message.cpp \
   jb/itch5/decoder.cpp \
   jb/itch5/ipo_quoting_period_update_message.cpp \
@@ -157,6 +272,7 @@ jb_libitch5_a_SOURCES = \
   jb/itch5/mwcb_breach_message.cpp \
   jb/itch5/mwcb_decline_level_message.cpp \
   jb/itch5/net_order_imbalance_indicator_message.cpp \
+  jb/itch5/order_book.cpp \
   jb/itch5/order_cancel_message.cpp \
   jb/itch5/order_delete_message.cpp \
   jb/itch5/order_executed_message.cpp \
@@ -177,6 +293,7 @@ jb_libitch5_a_HEADERS = \
   jb/itch5/broken_trade_message.hpp \
   jb/itch5/char_list_field.hpp \
   jb/itch5/char_list_validator.hpp \
+  jb/itch5/compute_inside.hpp \
   jb/itch5/cross_trade_message.hpp \
   jb/itch5/cross_type.hpp \
   jb/itch5/decoder.hpp \
@@ -187,6 +304,7 @@ jb_libitch5_a_HEADERS = \
   jb/itch5/mwcb_breach_message.hpp \
   jb/itch5/mwcb_decline_level_message.hpp \
   jb/itch5/net_order_imbalance_indicator_message.hpp \
+  jb/itch5/order_book.hpp \
   jb/itch5/order_cancel_message.hpp \
   jb/itch5/order_delete_message.hpp \
   jb/itch5/order_executed_message.hpp \
@@ -194,6 +312,9 @@ jb_libitch5_a_HEADERS = \
   jb/itch5/order_replace_message.hpp \
   jb/itch5/p2ceil.hpp \
   jb/itch5/price_field.hpp \
+  jb/itch5/process_buffer_mlist.hpp \
+  jb/itch5/process_iostream_mlist.hpp \
+  jb/itch5/process_iostream.hpp \
   jb/itch5/reg_sho_restriction_message.hpp \
   jb/itch5/seconds_field.hpp \
   jb/itch5/short_string_field.hpp \
@@ -208,20 +329,50 @@ jb_libitch5_a_HEADERS = \
 jb_libitch5_a_LIBADD =
 
 ################################################################
+# jb/libjb_fftw.a
+################################################################
+
+jb_libjb_fftw_adir = $(includedir)
+jb_libjb_fftw_a_SOURCES =
+jb_libjb_fftw_a_HEADERS = \
+  jb/fftw/aligned_vector.hpp \
+  jb/fftw/allocator.hpp \
+  jb/fftw/cast.hpp \
+  jb/fftw/plan.hpp \
+  jb/fftw/time_delay_estimator.hpp \
+  jb/fftw/traits.hpp
+
+################################################################
 # examples
 ################################################################
 
-examples_configuration_SOURCES = \
-  examples/configuration.cpp
+examples_configuration_SOURCES = examples/configuration.cpp
 examples_configuration_LDADD = jb/libjb.a
 
+examples_fftw_correlation_no_wrappers_SOURCES = examples/fftw_correlation_no_wrappers.cpp
+examples_fftw_correlation_no_wrappers_LDADD = jb/libjb.a $(FFTW3_LIBS)
+
+tools_itch5inside_SOURCES = tools/itch5inside.cpp
+tools_itch5inside_LDADD = jb/libitch5.a jb/libjb.a
+
+tools_itch5stats_SOURCES = tools/itch5stats.cpp
+tools_itch5stats_LDADD = jb/libitch5.a jb/libjb.a
+
 ################################################################
-# unit tests and benchmarks
+# benchmarks and unit tests
 ################################################################
+
+jb_bm_clocks_SOURCES = jb/bm_clocks.cpp
+jb_bm_clocks_CPPFLAGS =
+jb_bm_clocks_LDADD = jb/libjb_testing.a jb/libjb.a
 
 jb_ut_as_hhmmss_SOURCES = jb/ut_as_hhmmss.cpp
 jb_ut_as_hhmmss_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_ut_as_hhmmss
 jb_ut_as_hhmmss_LDADD = $(jb_ut_libs)
+
+jb_ut_assert_throw_SOURCES = jb/ut_assert_throw.cpp
+jb_ut_assert_throw_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_ut_assert_throw
+jb_ut_assert_throw_LDADD = $(jb_ut_libs)
 
 jb_ut_config_files_location_SOURCES = jb/ut_config_files_location.cpp
 jb_ut_config_files_location_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_ut_config_files_location
@@ -267,6 +418,10 @@ jb_ut_logging_SOURCES = jb/ut_logging.cpp
 jb_ut_logging_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_ut_logging
 jb_ut_logging_LDADD = $(jb_ut_libs)
 
+jb_ut_offline_feed_statistics_SOURCES = jb/ut_offline_feed_statistics.cpp
+jb_ut_offline_feed_statistics_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_ut_offline_feed_statistics
+jb_ut_offline_feed_statistics_LDADD = $(jb_ut_libs)
+
 jb_ut_severity_level_SOURCES = jb/ut_severity_level.cpp
 jb_ut_severity_level_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_ut_severity_level
 jb_ut_severity_level_LDADD = $(jb_ut_libs)
@@ -274,6 +429,40 @@ jb_ut_severity_level_LDADD = $(jb_ut_libs)
 jb_ut_strtonum_SOURCES = jb/ut_strtonum.cpp
 jb_ut_strtonum_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_ut_strtonum
 jb_ut_strtonum_LDADD = $(jb_ut_libs)
+
+################################################################
+# fftw unit tests
+################################################################
+
+jb_fftw_ut_allocator_SOURCES = jb/fftw/ut_allocator.cpp
+jb_fftw_ut_allocator_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_fftw_ut_allocator
+jb_fftw_ut_allocator_LDADD = $(jb_ut_fftw_libs)
+
+jb_fftw_ut_plan_SOURCES = jb/fftw/ut_plan.cpp
+jb_fftw_ut_plan_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_fftw_ut_plan
+jb_fftw_ut_plan_LDADD = $(jb_ut_fftw_libs)
+
+jb_fftw_ut_time_delay_estimator_SOURCES = jb/fftw/ut_time_delay_estimator.cpp
+jb_fftw_ut_time_delay_estimator_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_fftw_ut_time_delay_estimator
+jb_fftw_ut_time_delay_estimator_LDADD = $(jb_ut_fftw_libs)
+
+jb_fftw_ut_traits_SOURCES = jb/fftw/ut_traits.cpp
+jb_fftw_ut_traits_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_fftw_ut_traits
+jb_fftw_ut_traits_LDADD = $(jb_ut_fftw_libs)
+
+################################################################
+# fftw benchmarks
+################################################################
+
+jb_fftw_bm_time_delay_estimator_SOURCES = jb/fftw/bm_time_delay_estimator.cpp
+jb_fftw_bm_time_delay_estimator_CPPFLAGS =
+jb_fftw_bm_time_delay_estimator_LDADD = \
+  $(FFTW3_LIBS) \
+  $(FFTW3F_LIBS) \
+  $(FFTW3L_LIBS) \
+  jb/libjb_testing.a \
+  jb/libjb_fftw.a \
+  jb/libjb.a
 
 ################################################################
 # itch5 unit tests
@@ -302,6 +491,10 @@ jb_itch5_ut_char_list_field_LDADD = $(jb_ut_itch5_libs)
 jb_itch5_ut_char_list_validator_SOURCES = jb/itch5/ut_char_list_validator.cpp
 jb_itch5_ut_char_list_validator_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_itch5_ut_char_list_validator
 jb_itch5_ut_char_list_validator_LDADD = $(jb_ut_itch5_libs)
+
+jb_itch5_ut_compute_inside_SOURCES = jb/itch5/ut_compute_inside.cpp
+jb_itch5_ut_compute_inside_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_itch5_ut_compute_inside
+jb_itch5_ut_compute_inside_LDADD = $(jb_ut_itch5_libs)
 
 jb_itch5_ut_cross_trade_message_SOURCES = jb/itch5/ut_cross_trade_message.cpp
 jb_itch5_ut_cross_trade_message_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_itch5_ut_cross_trade_message
@@ -339,6 +532,10 @@ jb_itch5_ut_net_order_imbalance_indicator_message_SOURCES = jb/itch5/ut_net_orde
 jb_itch5_ut_net_order_imbalance_indicator_message_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_itch5_ut_net_order_imbalance_indicator_message
 jb_itch5_ut_net_order_imbalance_indicator_message_LDADD = $(jb_ut_itch5_libs)
 
+jb_itch5_ut_order_book_SOURCES = jb/itch5/ut_order_book.cpp
+jb_itch5_ut_order_book_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_itch5_ut_order_book
+jb_itch5_ut_order_book_LDADD = $(jb_ut_itch5_libs)
+
 jb_itch5_ut_order_cancel_message_SOURCES = jb/itch5/ut_order_cancel_message.cpp
 jb_itch5_ut_order_cancel_message_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_itch5_ut_order_cancel_message
 jb_itch5_ut_order_cancel_message_LDADD = $(jb_ut_itch5_libs)
@@ -366,6 +563,14 @@ jb_itch5_ut_p2ceil_LDADD = $(jb_ut_itch5_libs)
 jb_itch5_ut_price_field_SOURCES = jb/itch5/ut_price_field.cpp
 jb_itch5_ut_price_field_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_itch5_ut_price_field
 jb_itch5_ut_price_field_LDADD = $(jb_ut_itch5_libs)
+
+jb_itch5_ut_process_buffer_mlist_SOURCES = jb/itch5/ut_process_buffer_mlist.cpp
+jb_itch5_ut_process_buffer_mlist_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_itch5_ut_process_buffer_mlist
+jb_itch5_ut_process_buffer_mlist_LDADD = $(jb_ut_itch5_libs)
+
+jb_itch5_ut_process_iostream_mlist_SOURCES = jb/itch5/ut_process_iostream_mlist.cpp
+jb_itch5_ut_process_iostream_mlist_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_itch5_ut_process_iostream_mlist
+jb_itch5_ut_process_iostream_mlist_LDADD = $(jb_ut_itch5_libs)
 
 jb_itch5_ut_reg_sho_restriction_message_SOURCES = jb/itch5/ut_reg_sho_restriction_message.cpp
 jb_itch5_ut_reg_sho_restriction_message_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_itch5_ut_reg_sho_restriction_message
@@ -402,3 +607,23 @@ jb_itch5_ut_timestamp_LDADD = $(jb_ut_itch5_libs)
 jb_itch5_ut_trade_message_SOURCES = jb/itch5/ut_trade_message.cpp
 jb_itch5_ut_trade_message_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_itch5_ut_trade_message
 jb_itch5_ut_trade_message_LDADD = $(jb_ut_itch5_libs)
+
+################################################################
+# testing unit tests
+################################################################
+
+jb_testing_ut_create_square_timeseries_SOURCES = jb/testing/ut_create_square_timeseries.cpp
+jb_testing_ut_create_square_timeseries_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_testing_ut_create_square_timeseries
+jb_testing_ut_create_square_timeseries_LDADD = $(jb_ut_testing_libs)
+
+jb_testing_ut_create_triangle_timeseries_SOURCES = jb/testing/ut_create_triangle_timeseries.cpp
+jb_testing_ut_create_triangle_timeseries_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_testing_ut_create_triangle_timeseries
+jb_testing_ut_create_triangle_timeseries_LDADD = $(jb_ut_testing_libs)
+
+jb_testing_ut_delay_timeseries_SOURCES = jb/testing/ut_delay_timeseries.cpp
+jb_testing_ut_delay_timeseries_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_testing_ut_delay_timeseries
+jb_testing_ut_delay_timeseries_LDADD = $(jb_ut_testing_libs)
+
+jb_testing_ut_microbenchmark_config_SOURCES = jb/testing/ut_microbenchmark_config.cpp
+jb_testing_ut_microbenchmark_config_CPPFLAGS = $(UT_CPPFLAGS) -DBOOST_TEST_MODULE=jb_testing_ut_microbenchmark_config
+jb_testing_ut_microbenchmark_config_LDADD = $(jb_ut_testing_libs)
