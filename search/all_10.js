@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['qty',['qty',['../classjb_1_1itch5_1_1compute__inside.html#ab5297cff0f70906ee3600f8862a6e847',1,'jb::itch5::compute_inside::order_data']]]
+  ['qty',['qty',['../namespacejb_1_1itch5.html#a1b32d45f5b888db740083635275fa53e',1,'jb::itch5::book_update::qty()'],['../namespacejb_1_1itch5.html#a5744369aa0517ca28499f3742bdbfa42',1,'jb::itch5::order_data::qty()']]]
 ];
