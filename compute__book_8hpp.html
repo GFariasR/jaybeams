@@ -144,6 +144,7 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a9d8899243a2b5e030115b5554006d031"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejb_1_1itch5.html#a9d8899243a2b5e030115b5554006d031">jb::itch5::clock_type</a> = std::chrono::steady_clock</td></tr>
+<tr class="memdesc:a9d8899243a2b5e030115b5554006d031"><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience alias for clock_type.  <a href="namespacejb_1_1itch5.html#a9d8899243a2b5e030115b5554006d031">More...</a><br /></td></tr>
 <tr class="separator:a9d8899243a2b5e030115b5554006d031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab841715d223ab0bb40378f1081fbc933"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejb_1_1itch5.html#ab841715d223ab0bb40378f1081fbc933">jb::itch5::time_point</a> = clock_type::time_point</td></tr>
 <tr class="memdesc:ab841715d223ab0bb40378f1081fbc933"><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience alias for clock_type::time_point.  <a href="namespacejb_1_1itch5.html#ab841715d223ab0bb40378f1081fbc933">More...</a><br /></td></tr>
@@ -173,7 +174,7 @@ Functions</h2></td></tr>
 <div class="textblock"><p>A flat struct to represent updates to an order book. </p>
 <p>Updates to an order book come in many forms, but they can all be represented with a simple structure that shows: what book is being updated, what side of the book is being updated, what price level is being updated, and how many shares are being added or removed from the book. </p>
 
-<p>Definition at line <a class="el" href="compute__book_8hpp_source.html#l00036">36</a> of file <a class="el" href="compute__book_8hpp_source.html">compute_book.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compute__book_8hpp_source.html#l00038">38</a> of file <a class="el" href="compute__book_8hpp_source.html">compute_book.hpp</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
@@ -241,7 +242,7 @@ The security updated by this order. <p>This is redundant for order updates and d
 <div class="textblock"><p>A convenient container for per-order data. </p>
 <p>Most market data feeds resend the security identifier and side with each order update, but ITCH-5.0 does not. One needs to lookup the symbol, side, original price, information based on the order id. This literal type is used to keep that information around. </p>
 
-<p>Definition at line <a class="el" href="compute__book_8hpp_source.html#l00079">79</a> of file <a class="el" href="compute__book_8hpp_source.html">compute_book.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compute__book_8hpp_source.html#l00081">81</a> of file <a class="el" href="compute__book_8hpp_source.html">compute_book.hpp</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
