@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['uname_5fa',['uname_a',['../namespacejb_1_1testing.html#a0f9385725781790f56294cb5ad996166',1,'jb::testing']]],
-  ['underflow_5fcount',['underflow_count',['../classjb_1_1histogram.html#aba66f6dd97716ee3534f030dbd6d59e4',1,'jb::histogram']]],
+  ['uname_5fa',['uname_a',['../namespacejb_1_1testing.html#afc1a9e06c75eb1f164767ecf8e3e3e3b',1,'jb::testing']]],
+  ['underflow_5fcount',['underflow_count',['../classjb_1_1histogram.html#a1847b98e285bd10f9121fa8f9792f811',1,'jb::histogram']]],
   ['underflow_5fcount_5f',['underflow_count_',['../classjb_1_1histogram.html#a300d6e8debc13bf1c68041a67aaa9db6',1,'jb::histogram']]],
   ['unknown_5fmessage',['unknown_message',['../classjb_1_1itch5_1_1unknown__message.html',1,'jb::itch5']]],
   ['unknown_5fmessage',['unknown_message',['../classjb_1_1itch5_1_1unknown__message.html#aec28993fc999060c48d496dce11a1417',1,'jb::itch5::unknown_message::unknown_message(std::uint32_t count, std::size_t offset, std::size_t len, void const *buf)'],['../classjb_1_1itch5_1_1unknown__message.html#abbc4a4049b0f0eb33a57d33099efc2a4',1,'jb::itch5::unknown_message::unknown_message(unknown_message &amp;&amp;)=default'],['../classjb_1_1itch5_1_1unknown__message.html#ac1af1a7c2c2bbd2830e49e0844860596',1,'jb::itch5::unknown_message::unknown_message(unknown_message const &amp;)=delete']]],

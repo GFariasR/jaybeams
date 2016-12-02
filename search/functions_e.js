@@ -5,15 +5,15 @@ var searchData=
   ['raise_5fvalidation_5ffailed',['raise_validation_failed',['../namespacejb_1_1itch5.html#a5adafcf9d4e1e7d24a7caa1bd39bb577',1,'jb::itch5']]],
   ['record_5flatency_5fstats',['record_latency_stats',['../namespacejb_1_1itch5.html#ae8e80de5d5c3a620a47185a1ab16738c',1,'jb::itch5']]],
   ['record_5fsample',['record_sample',['../classjb_1_1offline__feed__statistics.html#afabf39eec3f0f6fcb30e7e7cccd8092a',1,'jb::offline_feed_statistics']]],
-  ['reg_5fsho_5frestriction',['reg_sho_restriction',['../namespacejb_1_1itch5_1_1testing.html#a131dc5a7f26355a1d72261249d28224e',1,'jb::itch5::testing']]],
+  ['reg_5fsho_5frestriction',['reg_sho_restriction',['../namespacejb_1_1itch5_1_1testing.html#a2b71a80752f62af5034cc49c53c27d4e',1,'jb::itch5::testing']]],
   ['release',['release',['../structjb_1_1fftw_1_1traits_3_01double_01_4.html#a6728a1c27b3a0c3efb04b3736bf8843a',1,'jb::fftw::traits&lt; double &gt;::release()'],['../structjb_1_1fftw_1_1traits_3_01float_01_4.html#af423c7798ac6322543c582f52b84d705',1,'jb::fftw::traits&lt; float &gt;::release()'],['../structjb_1_1fftw_1_1traits_3_01long_01double_01_4.html#a64615a9711707adac85bfe45d47f6665',1,'jb::fftw::traits&lt; long double &gt;::release()']]],
   ['reset',['reset',['../classjb_1_1histogram.html#abd04d5c38e88b4c4cef2784e568f3571',1,'jb::histogram']]],
   ['restart_5fasync_5freceive_5ffrom',['restart_async_receive_from',['../classjb_1_1itch5_1_1mold__udp__channel.html#ade6e88923f975fb1ffbcc4de924b08b3',1,'jb::itch5::mold_udp_channel']]],
   ['rotate',['rotate',['../classjb_1_1event__rate__estimator.html#ab7b3216c92860f6908c167c75df01450',1,'jb::event_rate_estimator']]],
-  ['run',['run',['../classjb_1_1testing_1_1microbenchmark.html#a6204769dfd6634aabc2a381f4c93693e',1,'jb::testing::microbenchmark']]],
+  ['run',['run',['../classjb_1_1testing_1_1microbenchmark.html#a3f27d027d24868c4abfdb174264288d6',1,'jb::testing::microbenchmark']]],
   ['run_5fbase',['run_base',['../classjb_1_1testing_1_1microbenchmark.html#ad500390d23e76ff4c38004c8e00cb97f',1,'jb::testing::microbenchmark']]],
-  ['run_5ffixed_5fsize',['run_fixed_size',['../classjb_1_1testing_1_1microbenchmark.html#ac59e9bf5be1185bdd99a8c4639448de5',1,'jb::testing::microbenchmark']]],
+  ['run_5ffixed_5fsize',['run_fixed_size',['../classjb_1_1testing_1_1microbenchmark.html#add4c022ff337515c0ffb946951ff8bb5',1,'jb::testing::microbenchmark']]],
   ['run_5fiteration',['run_iteration',['../classjb_1_1testing_1_1microbenchmark.html#adc38aa4f0f8d6856feb547baa1ba3987',1,'jb::testing::microbenchmark']]],
-  ['run_5fsized',['run_sized',['../classjb_1_1testing_1_1microbenchmark.html#aed8498ef62b4ef5858fc5a5949001c65',1,'jb::testing::microbenchmark']]],
-  ['run_5funsized',['run_unsized',['../classjb_1_1testing_1_1microbenchmark.html#ac1ff8702fe2a0cff1642153875541646',1,'jb::testing::microbenchmark::run_unsized(Args &amp;&amp;... args)'],['../classjb_1_1testing_1_1microbenchmark.html#a2b52749a759c9d64452e2da227afd43c',1,'jb::testing::microbenchmark::run_unsized()']]]
+  ['run_5fsized',['run_sized',['../classjb_1_1testing_1_1microbenchmark.html#a226554c1b8ad6dcc1f9e8f34c20d6672',1,'jb::testing::microbenchmark']]],
+  ['run_5funsized',['run_unsized',['../classjb_1_1testing_1_1microbenchmark.html#a7f040c72e3f464dd4f4bde86beb93017',1,'jb::testing::microbenchmark::run_unsized(Args &amp;&amp;...args)'],['../classjb_1_1testing_1_1microbenchmark.html#a2b52749a759c9d64452e2da227afd43c',1,'jb::testing::microbenchmark::run_unsized()']]]
 ];
