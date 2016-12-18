@@ -8,5 +8,5 @@ var searchData=
   ['buckets',['buckets',['../classjb_1_1event__rate__estimator.html#a2cc8967679f69b380ca94fa114e95cca',1,'jb::event_rate_estimator']]],
   ['buffer_5fhandler',['buffer_handler',['../classjb_1_1itch5_1_1mold__udp__channel.html#a2db62db3c4b52d23a3bea0e6eb5edff9',1,'jb::itch5::mold_udp_channel']]],
   ['buy_5fsell_5findicator_5ft',['buy_sell_indicator_t',['../namespacejb_1_1itch5.html#a4a7797c3e775c85474e0963e8518ab3c',1,'jb::itch5']]],
-  ['buys_5ft',['buys_t',['../namespacejb_1_1itch5.html#ac0e2b8202f35682ad6b745bf4743ec58',1,'jb::itch5::map_price']]]
+  ['buys_5ft',['buys_t',['../namespacejb_1_1itch5.html#a1c100868ae694e782cd02f0f85da242d',1,'jb::itch5::array_based_order_book::buys_t()'],['../namespacejb_1_1itch5.html#a819a0a7d35878754a2261f227039c7a9',1,'jb::itch5::map_based_order_book::buys_t()']]]
 ];

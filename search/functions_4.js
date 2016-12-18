@@ -1,8 +1,9 @@
 var searchData=
 [
   ['element_5fcount',['element_count',['../namespacejb_1_1fftw_1_1detail.html#a7edb455830e7fe6f7e3050bddd88640b',1,'jb::fftw::detail::element_count(boost::multi_array&lt; T, K, A &gt; const &amp;a)'],['../namespacejb_1_1fftw_1_1detail.html#af29cfef4fa6a9abffc720b04a8b3c3cc',1,'jb::fftw::detail::element_count(std::vector&lt; T, A &gt; const &amp;a)']]],
-  ['empty_5fbid',['empty_bid',['../classjb_1_1itch5_1_1order__book.html#a263044619eddd0811c2920d72ab51f07',1,'jb::itch5::order_book']]],
-  ['empty_5foffer',['empty_offer',['../classjb_1_1itch5_1_1order__book.html#a49fc0bb532133c9d3c8db1f20149c2db',1,'jb::itch5::order_book']]],
+  ['empty_5fbid',['empty_bid',['../classjb_1_1itch5_1_1array__based__book__side.html#ab249849f651e434b0d0028b6b5d704f4',1,'jb::itch5::array_based_book_side::empty_bid()'],['../classjb_1_1itch5_1_1map__based__book__side.html#abc756e655271d65acec0450ab7c2498a',1,'jb::itch5::map_based_book_side::empty_bid()'],['../classjb_1_1itch5_1_1order__book.html#a7c8886ea86390d64f768f27348c108d6',1,'jb::itch5::order_book::empty_bid()']]],
+  ['empty_5foffer',['empty_offer',['../classjb_1_1itch5_1_1array__based__book__side.html#a65089c414efd8967d13120f2c52be214',1,'jb::itch5::array_based_book_side::empty_offer()'],['../classjb_1_1itch5_1_1map__based__book__side.html#a2dce66d99bc557ef4e8451ecfe8ee451',1,'jb::itch5::map_based_book_side::empty_offer()'],['../classjb_1_1itch5_1_1order__book.html#af53ea2be581cc57501f9e93fb75cc1e5',1,'jb::itch5::order_book::empty_offer()']]],
+  ['empty_5fquote',['empty_quote',['../classjb_1_1itch5_1_1array__based__book__side.html#a15a0c0a4683c2b7fad020de07ec62603',1,'jb::itch5::array_based_book_side::empty_quote()'],['../classjb_1_1itch5_1_1map__based__book__side.html#a9c5e237b4264105e48c724b3316df118',1,'jb::itch5::map_based_book_side::empty_quote()']]],
   ['encode',['encode',['../structYAML_1_1convert_3_01jb_1_1severity__level_01_4.html#aed733abd665b6c2d6ddffa97b8058c13',1,'YAML::convert&lt; jb::severity_level &gt;']]],
   ['estimate_5fdelay',['estimate_delay',['../classjb_1_1fftw_1_1time__delay__estimator.html#a8b9006c09dde893ac18b7d1bc96dd818',1,'jb::fftw::time_delay_estimator']]],
   ['estimated_5fmean',['estimated_mean',['../classjb_1_1histogram.html#aa73371973ff3b372acfd5d3fbe8b9238',1,'jb::histogram']]],
