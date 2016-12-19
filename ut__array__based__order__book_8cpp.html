@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="array__based__order__book_8hpp_source.html">jb/itch5/array_based_order_book.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="ut__type__based__order__book_8hpp_source.html">jb/itch5/ut_type_based_order_book.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="ut__type__based__order__book_8hpp_source.html">jb/itch5/testing/ut_type_based_order_book.hpp</a>&gt;</code><br />
 <code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
 </div>
 <p><a href="ut__array__based__order__book_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -114,20 +114,22 @@ Functions</h2></td></tr>
 <tr class="separator:a3b928ea67143167daf7c3c60f6113edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a776150df49a9bf3199ef52263faa5ae5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#a776150df49a9bf3199ef52263faa5ae5">BOOST_AUTO_TEST_CASE</a> (array_based_order_book_errors)</td></tr>
 <tr class="separator:a776150df49a9bf3199ef52263faa5ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93dad77e5f7749e7bf259fb695dfd5ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#a93dad77e5f7749e7bf259fb695dfd5ed">BOOST_AUTO_TEST_CASE</a> (order_book_cache_aware_buy)</td></tr>
-<tr class="separator:a93dad77e5f7749e7bf259fb695dfd5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dcf2b0a23b534985168ddd15e2776cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#a0dcf2b0a23b534985168ddd15e2776cf">BOOST_AUTO_TEST_CASE</a> (order_book_cache_aware_sell)</td></tr>
-<tr class="separator:a0dcf2b0a23b534985168ddd15e2776cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad395106565d5f72660d0883090f0b6ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#ad395106565d5f72660d0883090f0b6ea">BOOST_AUTO_TEST_CASE</a> (order_book_cache_aware_buy_range)</td></tr>
-<tr class="separator:ad395106565d5f72660d0883090f0b6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1f9db72c0c3aefd7a236d257a69e627"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#aa1f9db72c0c3aefd7a236d257a69e627">BOOST_AUTO_TEST_CASE</a> (order_book_cache_aware_sell_range)</td></tr>
-<tr class="separator:aa1f9db72c0c3aefd7a236d257a69e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6de992f18fa11d75a8686fd4e62eb37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#ac6de992f18fa11d75a8686fd4e62eb37">BOOST_AUTO_TEST_CASE</a> (order_book_cache_aware_buy_small_tick)</td></tr>
-<tr class="separator:ac6de992f18fa11d75a8686fd4e62eb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff15d721173737b02735a27730e1024b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#aff15d721173737b02735a27730e1024b">BOOST_AUTO_TEST_CASE</a> (order_book_cache_aware_sell_small_tick)</td></tr>
-<tr class="separator:aff15d721173737b02735a27730e1024b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7717b07b0a9aa374c3aaff3caece6cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#ad7717b07b0a9aa374c3aaff3caece6cc">BOOST_AUTO_TEST_CASE</a> (order_book_cache_aware_sell_small_tick_bug01)</td></tr>
-<tr class="separator:ad7717b07b0a9aa374c3aaff3caece6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eba18c774e03374eb659a253c854e11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#a4eba18c774e03374eb659a253c854e11">BOOST_AUTO_TEST_CASE</a> (array_based_order_book_buy)</td></tr>
+<tr class="separator:a4eba18c774e03374eb659a253c854e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cbf1f9978551961acd733b91ecce366"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#a3cbf1f9978551961acd733b91ecce366">BOOST_AUTO_TEST_CASE</a> (array_based_order_book_sell)</td></tr>
+<tr class="separator:a3cbf1f9978551961acd733b91ecce366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15fca775fcefe08a3fead253640a7ba6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#a15fca775fcefe08a3fead253640a7ba6">BOOST_AUTO_TEST_CASE</a> (array_based_order_book_buy_range)</td></tr>
+<tr class="separator:a15fca775fcefe08a3fead253640a7ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643bf2d3ff4753e5d3c0571a953065dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#a643bf2d3ff4753e5d3c0571a953065dc">BOOST_AUTO_TEST_CASE</a> (array_based_order_book_sell_range)</td></tr>
+<tr class="separator:a643bf2d3ff4753e5d3c0571a953065dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac48fed7b750dabee8b7455ad586202b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#ac48fed7b750dabee8b7455ad586202b9">BOOST_AUTO_TEST_CASE</a> (array_based_order_book_buy_small_tick)</td></tr>
+<tr class="separator:ac48fed7b750dabee8b7455ad586202b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5452c20732e8294beb3d08232c142c3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#a5452c20732e8294beb3d08232c142c3c">BOOST_AUTO_TEST_CASE</a> (array_based_order_book_sell_small_tick)</td></tr>
+<tr class="separator:a5452c20732e8294beb3d08232c142c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81b1d84e7117b8374ea238bf0ca0809"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#ab81b1d84e7117b8374ea238bf0ca0809">BOOST_AUTO_TEST_CASE</a> (array_based_order_book_sell_small_tick_bug01)</td></tr>
+<tr class="separator:ab81b1d84e7117b8374ea238bf0ca0809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd100df2e552c2c7a76079303475d0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__array__based__order__book_8cpp.html#adbd100df2e552c2c7a76079303475d0d">BOOST_AUTO_TEST_CASE</a> (array_based_order_book_config_simple)</td></tr>
+<tr class="separator:adbd100df2e552c2c7a76079303475d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ae6abf48f833c84109af6cc96b39cf7fd"></a>
@@ -147,7 +149,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00009">9</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
 
-<p>References <a class="el" href="ut__type__based__order__book_8hpp_source.html#l00270">jb::itch5::testing::test_order_book_type_trivial()</a>.</p>
+<p>References <a class="el" href="ut__type__based__order__book_8hpp_source.html#l00268">jb::itch5::testing::test_order_book_type_trivial()</a>.</p>
 
 </div>
 </div>
@@ -168,7 +170,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00018">18</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
 
-<p>References <a class="el" href="ut__type__based__order__book_8hpp_source.html#l00309">jb::itch5::testing::test_order_book_type_add_reduce()</a>.</p>
+<p>References <a class="el" href="ut__type__based__order__book_8hpp_source.html#l00316">jb::itch5::testing::test_order_book_type_add_reduce()</a>.</p>
 
 </div>
 </div>
@@ -189,146 +191,146 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00026">26</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
 
-<p>References <a class="el" href="ut__type__based__order__book_8hpp_source.html#l00283">jb::itch5::testing::test_order_book_type_errors()</a>, and <a class="el" href="ut__type__based__order__book_8hpp_source.html#l00296">jb::itch5::testing::test_order_book_type_errors_spec()</a>.</p>
+<p>References <a class="el" href="ut__type__based__order__book_8hpp_source.html#l00284">jb::itch5::testing::test_order_book_type_errors()</a>, and <a class="el" href="ut__type__based__order__book_8hpp_source.html#l00300">jb::itch5::testing::test_order_book_type_errors_spec()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a93dad77e5f7749e7bf259fb695dfd5ed"></a>
+<a class="anchor" id="a4eba18c774e03374eb659a253c854e11"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">order_book_cache_aware_buy&#160;</td>
+          <td class="paramtype">array_based_order_book_buy&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="test"><dt><b><a class="el" href="test.html#_test000047">Test:</a></b></dt><dd>Verify that the buy side of jb::itch5::order_book_cache_aware works as expected.</dd></dl>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000047">Test:</a></b></dt><dd>Verify that the buy side of array_based_order_book works as expected.</dd></dl>
 
 <p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00036">36</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
 
-<p>References <a class="el" href="array__based__order__book_8hpp_source.html#l00145">jb::itch5::array_based_book_side&lt; compare_t &gt;::add_order()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00091">jb::itch5::array_based_book_side&lt; compare_t &gt;::best_quote()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00120">jb::itch5::array_based_book_side&lt; compare_t &gt;::count()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00319">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_counts()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00312">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_limits()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00200">jb::itch5::array_based_book_side&lt; compare_t &gt;::reduce_order()</a>, and <a class="el" href="array__based__order__book_8hpp_source.html#l00103">jb::itch5::array_based_book_side&lt; compare_t &gt;::worst_quote()</a>.</p>
+<p>References <a class="el" href="array__based__order__book_8hpp_source.html#l00178">jb::itch5::array_based_book_side&lt; compare_t &gt;::add_order()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00131">jb::itch5::array_based_book_side&lt; compare_t &gt;::best_quote()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00160">jb::itch5::array_based_book_side&lt; compare_t &gt;::count()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00357">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_counts()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00350">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_limits()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00028">jb::itch5::defaults::max_size</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00238">jb::itch5::array_based_book_side&lt; compare_t &gt;::reduce_order()</a>, and <a class="el" href="array__based__order__book_8hpp_source.html#l00143">jb::itch5::array_based_book_side&lt; compare_t &gt;::worst_quote()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a0dcf2b0a23b534985168ddd15e2776cf"></a>
+<a class="anchor" id="a3cbf1f9978551961acd733b91ecce366"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">order_book_cache_aware_sell&#160;</td>
+          <td class="paramtype">array_based_order_book_sell&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="test"><dt><b><a class="el" href="test.html#_test000048">Test:</a></b></dt><dd>Verity that the sell side of jb::itch5::order_book_cache_aware works as expected.</dd></dl>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000048">Test:</a></b></dt><dd>Verity that the sell side of array_based_order_book works as expected.</dd></dl>
 
-<p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00148">148</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00149">149</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
 
-<p>References <a class="el" href="array__based__order__book_8hpp_source.html#l00145">jb::itch5::array_based_book_side&lt; compare_t &gt;::add_order()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00091">jb::itch5::array_based_book_side&lt; compare_t &gt;::best_quote()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00120">jb::itch5::array_based_book_side&lt; compare_t &gt;::count()</a>, and <a class="el" href="array__based__order__book_8hpp_source.html#l00200">jb::itch5::array_based_book_side&lt; compare_t &gt;::reduce_order()</a>.</p>
+<p>References <a class="el" href="array__based__order__book_8hpp_source.html#l00178">jb::itch5::array_based_book_side&lt; compare_t &gt;::add_order()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00131">jb::itch5::array_based_book_side&lt; compare_t &gt;::best_quote()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00160">jb::itch5::array_based_book_side&lt; compare_t &gt;::count()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00028">jb::itch5::defaults::max_size</a>, and <a class="el" href="array__based__order__book_8hpp_source.html#l00238">jb::itch5::array_based_book_side&lt; compare_t &gt;::reduce_order()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad395106565d5f72660d0883090f0b6ea"></a>
+<a class="anchor" id="a15fca775fcefe08a3fead253640a7ba6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">order_book_cache_aware_buy_range&#160;</td>
+          <td class="paramtype">array_based_order_book_buy_range&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="test"><dt><b><a class="el" href="test.html#_test000049">Test:</a></b></dt><dd>Verify that the buy side of jb::itch5::order_book_cache_aware works as expected.</dd></dl>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000049">Test:</a></b></dt><dd>Verify that the buy side of array_based_order_book works as expected.</dd></dl>
 
-<p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00234">234</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00236">236</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
 
-<p>References <a class="el" href="array__based__order__book_8hpp_source.html#l00145">jb::itch5::array_based_book_side&lt; compare_t &gt;::add_order()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00319">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_counts()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00312">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_limits()</a>, and <a class="el" href="array__based__order__book_8hpp_source.html#l00200">jb::itch5::array_based_book_side&lt; compare_t &gt;::reduce_order()</a>.</p>
+<p>References <a class="el" href="array__based__order__book_8hpp_source.html#l00178">jb::itch5::array_based_book_side&lt; compare_t &gt;::add_order()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00357">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_counts()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00350">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_limits()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00028">jb::itch5::defaults::max_size</a>, and <a class="el" href="array__based__order__book_8hpp_source.html#l00238">jb::itch5::array_based_book_side&lt; compare_t &gt;::reduce_order()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aa1f9db72c0c3aefd7a236d257a69e627"></a>
+<a class="anchor" id="a643bf2d3ff4753e5d3c0571a953065dc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">order_book_cache_aware_sell_range&#160;</td>
+          <td class="paramtype">array_based_order_book_sell_range&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="test"><dt><b><a class="el" href="test.html#_test000050">Test:</a></b></dt><dd>Verify that the buy side of jb::itch5::order_book_cache_aware works as expected.</dd></dl>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000050">Test:</a></b></dt><dd>Verify that the buy side of array_based_order_book works as expected.</dd></dl>
 
-<p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00405">405</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00408">408</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
 
-<p>References <a class="el" href="array__based__order__book_8hpp_source.html#l00145">jb::itch5::array_based_book_side&lt; compare_t &gt;::add_order()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00120">jb::itch5::array_based_book_side&lt; compare_t &gt;::count()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00319">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_counts()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00312">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_limits()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00027">jb::itch5::HIGHEST_PRICE</a>, and <a class="el" href="array__based__order__book_8hpp_source.html#l00200">jb::itch5::array_based_book_side&lt; compare_t &gt;::reduce_order()</a>.</p>
+<p>References <a class="el" href="array__based__order__book_8hpp_source.html#l00178">jb::itch5::array_based_book_side&lt; compare_t &gt;::add_order()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00160">jb::itch5::array_based_book_side&lt; compare_t &gt;::count()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00357">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_counts()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00350">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_limits()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00028">jb::itch5::defaults::max_size</a>, and <a class="el" href="array__based__order__book_8hpp_source.html#l00238">jb::itch5::array_based_book_side&lt; compare_t &gt;::reduce_order()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac6de992f18fa11d75a8686fd4e62eb37"></a>
+<a class="anchor" id="ac48fed7b750dabee8b7455ad586202b9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">order_book_cache_aware_buy_small_tick&#160;</td>
+          <td class="paramtype">array_based_order_book_buy_small_tick&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="test"><dt><b><a class="el" href="test.html#_test000051">Test:</a></b></dt><dd>Verify that the buy side of jb::itch5::order_book_cache_aware works as expected.</dd></dl>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000051">Test:</a></b></dt><dd>Verify that the buy side of array_based_order_book works as expected.</dd></dl>
 <p>Test suite for prices below $1.00. A smaller tick offset is used to facilitate the tests </p>
 
-<p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00586">586</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00591">591</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
 
-<p>References <a class="el" href="array__based__order__book_8hpp_source.html#l00145">jb::itch5::array_based_book_side&lt; compare_t &gt;::add_order()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00312">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_limits()</a>, and <a class="el" href="array__based__order__book_8hpp_source.html#l00200">jb::itch5::array_based_book_side&lt; compare_t &gt;::reduce_order()</a>.</p>
+<p>References <a class="el" href="array__based__order__book_8hpp_source.html#l00178">jb::itch5::array_based_book_side&lt; compare_t &gt;::add_order()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00350">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_limits()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00028">jb::itch5::defaults::max_size</a>, and <a class="el" href="array__based__order__book_8hpp_source.html#l00238">jb::itch5::array_based_book_side&lt; compare_t &gt;::reduce_order()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aff15d721173737b02735a27730e1024b"></a>
+<a class="anchor" id="a5452c20732e8294beb3d08232c142c3c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">order_book_cache_aware_sell_small_tick&#160;</td>
+          <td class="paramtype">array_based_order_book_sell_small_tick&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="test"><dt><b><a class="el" href="test.html#_test000052">Test:</a></b></dt><dd>Verify that the buy side of jb::itch5::order_book_cache_aware works as expected.</dd></dl>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000052">Test:</a></b></dt><dd>Verify that the buy side of array_based_order_book works as expected.</dd></dl>
 <p>Test suite for prices below $1.00. A smaller tick offset is used to facilitate the tests </p>
 
-<p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00731">731</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00737">737</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
 
-<p>References <a class="el" href="array__based__order__book_8hpp_source.html#l00145">jb::itch5::array_based_book_side&lt; compare_t &gt;::add_order()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00312">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_limits()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00027">jb::itch5::HIGHEST_PRICE</a>, and <a class="el" href="array__based__order__book_8hpp_source.html#l00200">jb::itch5::array_based_book_side&lt; compare_t &gt;::reduce_order()</a>.</p>
+<p>References <a class="el" href="array__based__order__book_8hpp_source.html#l00178">jb::itch5::array_based_book_side&lt; compare_t &gt;::add_order()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00350">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_limits()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00028">jb::itch5::defaults::max_size</a>, and <a class="el" href="array__based__order__book_8hpp_source.html#l00238">jb::itch5::array_based_book_side&lt; compare_t &gt;::reduce_order()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad7717b07b0a9aa374c3aaff3caece6cc"></a>
+<a class="anchor" id="ab81b1d84e7117b8374ea238bf0ca0809"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">order_book_cache_aware_sell_small_tick_bug01&#160;</td>
+          <td class="paramtype">array_based_order_book_sell_small_tick_bug01&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -337,9 +339,30 @@ Functions</h2></td></tr>
 <dl class="test"><dt><b><a class="el" href="test.html#_test000053">Test:</a></b></dt><dd>itch5arrayinside exception generated.</dd></dl>
 <p>Adding test case to fix the problem. </p>
 
-<p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00828">828</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00836">836</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
 
-<p>References <a class="el" href="array__based__order__book_8hpp_source.html#l00145">jb::itch5::array_based_book_side&lt; compare_t &gt;::add_order()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00319">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_counts()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00312">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_limits()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00027">jb::itch5::HIGHEST_PRICE</a>, and <a class="el" href="array__based__order__book_8hpp_source.html#l00200">jb::itch5::array_based_book_side&lt; compare_t &gt;::reduce_order()</a>.</p>
+<p>References <a class="el" href="array__based__order__book_8hpp_source.html#l00178">jb::itch5::array_based_book_side&lt; compare_t &gt;::add_order()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00357">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_counts()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00350">jb::itch5::array_based_book_side&lt; compare_t &gt;::get_limits()</a>, <a class="el" href="array__based__order__book_8hpp_source.html#l00028">jb::itch5::defaults::max_size</a>, and <a class="el" href="array__based__order__book_8hpp_source.html#l00238">jb::itch5::array_based_book_side&lt; compare_t &gt;::reduce_order()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adbd100df2e552c2c7a76079303475d0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">array_based_order_book_config_simple&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="test"><dt><b><a class="el" href="test.html#_test000054">Test:</a></b></dt><dd>Verify that array_based_order_book::config works as expected.</dd></dl>
+
+<p>Definition at line <a class="el" href="ut__array__based__order__book_8cpp_source.html#l00923">923</a> of file <a class="el" href="ut__array__based__order__book_8cpp_source.html">ut_array_based_order_book.cpp</a>.</p>
+
+<p>References <a class="el" href="array__based__order__book_8hpp_source.html#l00028">jb::itch5::defaults::max_size</a>.</p>
 
 </div>
 </div>

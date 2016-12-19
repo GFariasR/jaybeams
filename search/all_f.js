@@ -39,6 +39,7 @@ var searchData=
   ['price',['price',['../structjb_1_1itch5_1_1add__order__message.html#a803dededb444d0a57dd2e3d84d0a964b',1,'jb::itch5::add_order_message::price()'],['../structjb_1_1itch5_1_1order__replace__message.html#a242569377bbf3c2c05c41fce9be76b73',1,'jb::itch5::order_replace_message::price()'],['../structjb_1_1itch5_1_1trade__message.html#a437483d75bc0ffcfa7229cb149a6e0e0',1,'jb::itch5::trade_message::price()']]],
   ['price4_5ft',['price4_t',['../namespacejb_1_1itch5.html#afbe422fcea46cc63c32e32644576d188',1,'jb::itch5']]],
   ['price8_5ft',['price8_t',['../namespacejb_1_1itch5.html#ad33add5d7c887b71b2fcbe159c53b99f',1,'jb::itch5']]],
+  ['price_5fcomp',['price_comp',['../classjb_1_1itch5_1_1array__based__book__side.html#ab3b8becf4a75237908f5382d92d0eea2',1,'jb::itch5::array_based_book_side::price_comp()'],['../classjb_1_1itch5_1_1map__based__book__side.html#afa7ff09e3b79536493d91bc982bdfd69',1,'jb::itch5::map_based_book_side::price_comp()']]],
   ['price_5ffield',['price_field',['../classjb_1_1itch5_1_1price__field.html#ad99347b8950e7cc29cf71623cd298bcb',1,'jb::itch5::price_field::price_field()'],['../classjb_1_1itch5_1_1price__field.html#af9582175b37c893f0078f9c4d39f7ed3',1,'jb::itch5::price_field::price_field(wire_type rhs)']]],
   ['price_5ffield',['price_field',['../classjb_1_1itch5_1_1price__field.html',1,'jb::itch5']]],
   ['price_5ffield_2ehpp',['price_field.hpp',['../price__field_8hpp.html',1,'']]],

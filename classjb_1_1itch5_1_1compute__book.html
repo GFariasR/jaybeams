@@ -121,17 +121,20 @@ Public Types</h2></td></tr>
 <tr class="memitem:adf3a0b44ab4dc8845abdde95a15814a8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#adf3a0b44ab4dc8845abdde95a15814a8">time_point</a> = <a class="el" href="namespacejb_1_1itch5.html#ab841715d223ab0bb40378f1081fbc933">jb::itch5::time_point</a></td></tr>
 <tr class="memdesc:adf3a0b44ab4dc8845abdde95a15814a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">time_point is used as a compute_book&lt;book_type&gt; type in some modules  <a href="#adf3a0b44ab4dc8845abdde95a15814a8">More...</a><br /></td></tr>
 <tr class="separator:adf3a0b44ab4dc8845abdde95a15814a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2279353ca6c9c9e7fcaaa7efd1930c9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#ac2279353ca6c9c9e7fcaaa7efd1930c9">book_type_config</a> = typename book_type::config</td></tr>
+<tr class="memdesc:ac2279353ca6c9c9e7fcaaa7efd1930c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">config type is used to construct the <a class="el" href="classjb_1_1itch5_1_1order__book.html" title="Maintain the ITCH-5.0 order book for a single security. ">order_book</a>  <a href="#ac2279353ca6c9c9e7fcaaa7efd1930c9">More...</a><br /></td></tr>
+<tr class="separator:ac2279353ca6c9c9e7fcaaa7efd1930c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf98f4ecf40b0878eb004188a6d1ae04"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#acf98f4ecf40b0878eb004188a6d1ae04">callback_type</a> = std::function&lt; void(<a class="el" href="namespacejb_1_1itch5.html#structjb_1_1itch5_1_1message__header">message_header</a> const &amp;header, <a class="el" href="classjb_1_1itch5_1_1order__book.html">order_book</a>&lt; book_type &gt; const &amp;updated_book, <a class="el" href="namespacejb_1_1itch5.html#structjb_1_1itch5_1_1book__update">book_update</a> const &amp;update)&gt;</td></tr>
 <tr class="memdesc:acf98f4ecf40b0878eb004188a6d1ae04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the callback type.  <a href="#acf98f4ecf40b0878eb004188a6d1ae04">More...</a><br /></td></tr>
 <tr class="separator:acf98f4ecf40b0878eb004188a6d1ae04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adf7c7f60c67ca8335837be3f872e3a9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#adf7c7f60c67ca8335837be3f872e3a9e">compute_book</a> (<a class="el" href="classjb_1_1itch5_1_1compute__book.html#acf98f4ecf40b0878eb004188a6d1ae04">callback_type</a> &amp;&amp;cb, typename <a class="el" href="classjb_1_1itch5_1_1order__book.html">order_book</a>&lt; book_type &gt;::config const &amp;cfg)</td></tr>
-<tr class="memdesc:adf7c7f60c67ca8335837be3f872e3a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#adf7c7f60c67ca8335837be3f872e3a9e">More...</a><br /></td></tr>
-<tr class="separator:adf7c7f60c67ca8335837be3f872e3a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89d66a8d497522f69bd384f24d0df577"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#a89d66a8d497522f69bd384f24d0df577">compute_book</a> (<a class="el" href="classjb_1_1itch5_1_1compute__book.html#acf98f4ecf40b0878eb004188a6d1ae04">callback_type</a> const &amp;cb, typename <a class="el" href="classjb_1_1itch5_1_1order__book.html">order_book</a>&lt; book_type &gt;::config const &amp;cfg)</td></tr>
-<tr class="separator:a89d66a8d497522f69bd384f24d0df577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb022b434081c4220d26f180a754c09d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#acb022b434081c4220d26f180a754c09d">compute_book</a> (<a class="el" href="classjb_1_1itch5_1_1compute__book.html#acf98f4ecf40b0878eb004188a6d1ae04">callback_type</a> &amp;&amp;cb, <a class="el" href="classjb_1_1itch5_1_1compute__book.html#ac2279353ca6c9c9e7fcaaa7efd1930c9">book_type_config</a> const &amp;cfg)</td></tr>
+<tr class="memdesc:acb022b434081c4220d26f180a754c09d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#acb022b434081c4220d26f180a754c09d">More...</a><br /></td></tr>
+<tr class="separator:acb022b434081c4220d26f180a754c09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab768004ebce86abd6406a1027416184"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#aab768004ebce86abd6406a1027416184">compute_book</a> (<a class="el" href="classjb_1_1itch5_1_1compute__book.html#acf98f4ecf40b0878eb004188a6d1ae04">callback_type</a> const &amp;cb, <a class="el" href="classjb_1_1itch5_1_1compute__book.html#ac2279353ca6c9c9e7fcaaa7efd1930c9">book_type_config</a> const &amp;cfg)</td></tr>
+<tr class="separator:aab768004ebce86abd6406a1027416184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a555092e105e30292e32a7fd786143fc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#a555092e105e30292e32a7fd786143fc5">handle_message</a> (<a class="el" href="classjb_1_1itch5_1_1compute__book.html#adf3a0b44ab4dc8845abdde95a15814a8">time_point</a> recvts, long msgcnt, std::size_t msgoffset, <a class="el" href="structjb_1_1itch5_1_1add__order__message.html">add_order_message</a> const &amp;msg)</td></tr>
 <tr class="memdesc:a555092e105e30292e32a7fd786143fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle a new order message.  <a href="#a555092e105e30292e32a7fd786143fc5">More...</a><br /></td></tr>
 <tr class="separator:a555092e105e30292e32a7fd786143fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,9 +204,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae89ac95650eb6f4d6a7b246b435929bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#acf01e4c2b8bc6cd7fa1fe184d50629af">orders_by_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#ae89ac95650eb6f4d6a7b246b435929bd">orders_</a></td></tr>
 <tr class="memdesc:ae89ac95650eb6f4d6a7b246b435929bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The live orders indexed by the "order reference number".  <a href="#ae89ac95650eb6f4d6a7b246b435929bd">More...</a><br /></td></tr>
 <tr class="separator:ae89ac95650eb6f4d6a7b246b435929bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac335e6c5ba7560d8e4ea060b62e07139"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjb_1_1itch5_1_1order__book.html">order_book</a>&lt; book_type &gt;::config const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#ac335e6c5ba7560d8e4ea060b62e07139">cfg_</a></td></tr>
-<tr class="memdesc:ac335e6c5ba7560d8e4ea060b62e07139"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to the order book config  <a href="#ac335e6c5ba7560d8e4ea060b62e07139">More...</a><br /></td></tr>
-<tr class="separator:ac335e6c5ba7560d8e4ea060b62e07139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb0435701863bc943d2f9cceb9d819d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#ac2279353ca6c9c9e7fcaaa7efd1930c9">book_type_config</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#aaeb0435701863bc943d2f9cceb9d819d">cfg_</a></td></tr>
+<tr class="memdesc:aaeb0435701863bc943d2f9cceb9d819d"><td class="mdescLeft">&#160;</td><td class="mdescRight">reference to the order book config  <a href="#aaeb0435701863bc943d2f9cceb9d819d">More...</a><br /></td></tr>
+<tr class="separator:aaeb0435701863bc943d2f9cceb9d819d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename book_type&gt;<br />
@@ -220,6 +223,24 @@ class jb::itch5::compute_book&lt; book_type &gt;</h3>
 
 <p>Definition at line <a class="el" href="compute__book_8hpp_source.html#l00106">106</a> of file <a class="el" href="compute__book_8hpp_source.html">compute_book.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a class="anchor" id="ac2279353ca6c9c9e7fcaaa7efd1930c9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename book_type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classjb_1_1itch5_1_1compute__book.html">jb::itch5::compute_book</a>&lt; book_type &gt;::<a class="el" href="classjb_1_1itch5_1_1compute__book.html#ac2279353ca6c9c9e7fcaaa7efd1930c9">book_type_config</a> =  typename book_type::config</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>config type is used to construct the <a class="el" href="classjb_1_1itch5_1_1order__book.html" title="Maintain the ITCH-5.0 order book for a single security. ">order_book</a> </p>
+
+<p>Definition at line <a class="el" href="compute__book_8hpp_source.html#l00121">121</a> of file <a class="el" href="compute__book_8hpp_source.html">compute_book.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="af6dc87137454dffc31abf3153fa239fd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +290,7 @@ template&lt;typename book_type&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="compute__book_8hpp_source.html#l00134">134</a> of file <a class="el" href="compute__book_8hpp_source.html">compute_book.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compute__book_8hpp_source.html#l00137">137</a> of file <a class="el" href="compute__book_8hpp_source.html">compute_book.hpp</a>.</p>
 
 </div>
 </div>
@@ -360,7 +381,7 @@ template&lt;typename book_type&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="adf7c7f60c67ca8335837be3f872e3a9e"></a>
+<a class="anchor" id="acb022b434081c4220d26f180a754c09d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -378,7 +399,7 @@ template&lt;typename book_type&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="classjb_1_1itch5_1_1order__book.html">order_book</a>&lt; book_type &gt;::config const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#ac2279353ca6c9c9e7fcaaa7efd1930c9">book_type_config</a> const &amp;&#160;</td>
           <td class="paramname"><em>cfg</em>&#160;</td>
         </tr>
         <tr>
@@ -396,11 +417,11 @@ template&lt;typename book_type&gt; </div>
 
 <p>Constructor. </p>
 
-<p>Definition at line <a class="el" href="compute__book_8hpp_source.html#l00138">138</a> of file <a class="el" href="compute__book_8hpp_source.html">compute_book.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compute__book_8hpp_source.html#l00141">141</a> of file <a class="el" href="compute__book_8hpp_source.html">compute_book.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a89d66a8d497522f69bd384f24d0df577"></a>
+<a class="anchor" id="aab768004ebce86abd6406a1027416184"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -418,7 +439,7 @@ template&lt;typename book_type&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="classjb_1_1itch5_1_1order__book.html">order_book</a>&lt; book_type &gt;::config const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#ac2279353ca6c9c9e7fcaaa7efd1930c9">book_type_config</a> const &amp;&#160;</td>
           <td class="paramname"><em>cfg</em>&#160;</td>
         </tr>
         <tr>
@@ -434,7 +455,7 @@ template&lt;typename book_type&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="compute__book_8hpp_source.html#l00146">146</a> of file <a class="el" href="compute__book_8hpp_source.html">compute_book.hpp</a>.</p>
+<p>Definition at line <a class="el" href="compute__book_8hpp_source.html#l00148">148</a> of file <a class="el" href="compute__book_8hpp_source.html">compute_book.hpp</a>.</p>
 
 </div>
 </div>
@@ -526,7 +547,7 @@ template&lt;typename book_type&gt; </div>
 
 <p>Definition at line <a class="el" href="compute__book_8hpp_source.html#l00459">459</a> of file <a class="el" href="compute__book_8hpp_source.html">compute_book.hpp</a>.</p>
 
-<p>References <a class="el" href="order__book_8hpp_source.html#l00155">jb::itch5::order_book&lt; book_type &gt;::handle_order_reduced()</a>, <a class="el" href="log_8hpp_source.html#l00070">JB_LOG</a>, <a class="el" href="compute__book_8hpp_source.html#l00059">jb::itch5::book_update::qty</a>, <a class="el" href="compute__book_8hpp_source.html#l00042">jb::itch5::book_update::recvts</a>, and <a class="el" href="namespacejb.html#a8c91d72478d03f9b72486db893bf4603a7b83d3f08fa392b79e3f553b585971cd">jb::warning</a>.</p>
+<p>References <a class="el" href="order__book_8hpp_source.html#l00143">jb::itch5::order_book&lt; book_type &gt;::handle_order_reduced()</a>, <a class="el" href="log_8hpp_source.html#l00070">JB_LOG</a>, <a class="el" href="compute__book_8hpp_source.html#l00059">jb::itch5::book_update::qty</a>, <a class="el" href="compute__book_8hpp_source.html#l00042">jb::itch5::book_update::recvts</a>, and <a class="el" href="namespacejb.html#a8c91d72478d03f9b72486db893bf4603a7b83d3f08fa392b79e3f553b585971cd">jb::warning</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1345,7 @@ template&lt;typename book_type&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac335e6c5ba7560d8e4ea060b62e07139"></a>
+<a class="anchor" id="aaeb0435701863bc943d2f9cceb9d819d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1334,7 +1355,7 @@ template&lt;typename book_type&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classjb_1_1itch5_1_1order__book.html">order_book</a>&lt;book_type&gt;::config const&amp; <a class="el" href="classjb_1_1itch5_1_1compute__book.html">jb::itch5::compute_book</a>&lt; book_type &gt;::cfg_</td>
+          <td class="memname"><a class="el" href="classjb_1_1itch5_1_1compute__book.html#ac2279353ca6c9c9e7fcaaa7efd1930c9">book_type_config</a> const&amp; <a class="el" href="classjb_1_1itch5_1_1compute__book.html">jb::itch5::compute_book</a>&lt; book_type &gt;::cfg_</td>
         </tr>
       </table>
   </td>
@@ -1344,7 +1365,7 @@ template&lt;typename book_type&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>pointer to the order book config </p>
+<p>reference to the order book config </p>
 
 <p>Definition at line <a class="el" href="compute__book_8hpp_source.html#l00501">501</a> of file <a class="el" href="compute__book_8hpp_source.html">compute_book.hpp</a>.</p>
 
