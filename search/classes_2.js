@@ -46,6 +46,9 @@ var searchData=
   ['config_5fattribute_3c_20jb_3a_3atesting_3a_3amicrobenchmark_5fconfig_2c_20bool_20_3e',['config_attribute&lt; jb::testing::microbenchmark_config, bool &gt;',['../classjb_1_1config__attribute.html',1,'jb']]],
   ['config_5fattribute_3c_20jb_3a_3atesting_3a_3amicrobenchmark_5fconfig_2c_20int_20_3e',['config_attribute&lt; jb::testing::microbenchmark_config, int &gt;',['../classjb_1_1config__attribute.html',1,'jb']]],
   ['config_5fattribute_3c_20jb_3a_3atesting_3a_3amicrobenchmark_5fconfig_2c_20std_3a_3astring_20_3e',['config_attribute&lt; jb::testing::microbenchmark_config, std::string &gt;',['../classjb_1_1config__attribute.html',1,'jb']]],
+  ['config_5fattribute_3c_20jb_3a_3athread_5fconfig_2c_20bool_20_3e',['config_attribute&lt; jb::thread_config, bool &gt;',['../classjb_1_1config__attribute.html',1,'jb']]],
+  ['config_5fattribute_3c_20jb_3a_3athread_5fconfig_2c_20jb_3a_3ajb_3a_3acpu_5fset_20_3e',['config_attribute&lt; jb::thread_config, jb::jb::cpu_set &gt;',['../classjb_1_1config__attribute.html',1,'jb']]],
+  ['config_5fattribute_3c_20jb_3a_3athread_5fconfig_2c_20std_3a_3astring_20_3e',['config_attribute&lt; jb::thread_config, std::string &gt;',['../classjb_1_1config__attribute.html',1,'jb']]],
   ['config_5fattribute_3c_20program_5fconfig_2c_20std_3a_3avector_3c_20std_3a_3astring_20_3e_20_3e',['config_attribute&lt; program_config, std::vector&lt; std::string &gt; &gt;',['../classjb_1_1config__attribute.html',1,'jb']]],
   ['config_5fattribute_3c_20program_5fconfig_2c_20std_3a_3avector_3c_20worker_5fconfig_20_3e_20_3e',['config_attribute&lt; program_config, std::vector&lt; worker_config &gt; &gt;',['../classjb_1_1config__attribute.html',1,'jb']]],
   ['config_5fattribute_3c_20thread_5fconfig_2c_20int_20_3e',['config_attribute&lt; thread_config, int &gt;',['../classjb_1_1config__attribute.html',1,'jb']]],
@@ -58,6 +61,8 @@ var searchData=
   ['config_5frecurse',['config_recurse',['../structjb_1_1config__recurse.html',1,'jb']]],
   ['container_5ftraits',['container_traits',['../namespacejb_1_1fftw_1_1detail.html#structjb_1_1fftw_1_1detail_1_1container__traits',1,'jb::fftw::detail']]],
   ['container_5ftraits_3c_20boost_3a_3amulti_5farray_3c_20t_2c_20k_2c_20a_20_3e_20_3e',['container_traits&lt; boost::multi_array&lt; T, K, A &gt; &gt;',['../namespacejb_1_1fftw_1_1detail.html#structjb_1_1fftw_1_1detail_1_1container__traits_3_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4',1,'jb::fftw::detail']]],
+  ['convert_3c_20jb_3a_3acpu_5fset_20_3e',['convert&lt; jb::cpu_set &gt;',['../structYAML_1_1convert_3_01jb_1_1cpu__set_01_4.html',1,'YAML']]],
   ['convert_3c_20jb_3a_3aseverity_5flevel_20_3e',['convert&lt; jb::severity_level &gt;',['../structYAML_1_1convert_3_01jb_1_1severity__level_01_4.html',1,'YAML']]],
+  ['cpu_5fset',['cpu_set',['../classjb_1_1cpu__set.html',1,'jb']]],
   ['cross_5ftrade_5fmessage',['cross_trade_message',['../structjb_1_1itch5_1_1cross__trade__message.html',1,'jb::itch5']]]
 ];

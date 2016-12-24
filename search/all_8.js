@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['ignore_5fsetup_5ferrors',['ignore_setup_errors',['../classjb_1_1thread__config.html#ae4986998a011fc6fc882063c7d00c627',1,'jb::thread_config::ignore_setup_errors()'],['../namespacejb_1_1defaults.html#a547f91d66c2147f8e0c18fefedb8bb88',1,'jb::defaults::ignore_setup_errors()']]],
   ['imbalance_5fdirection',['imbalance_direction',['../structjb_1_1itch5_1_1net__order__imbalance__indicator__message.html#ae87c9afdc0c68c7a1ebd78ec432a79f5',1,'jb::itch5::net_order_imbalance_indicator_message']]],
   ['imbalance_5fdirection_5ft',['imbalance_direction_t',['../namespacejb_1_1itch5.html#a21b9b3380ceb5f904362fe9ddb82dc3a',1,'jb::itch5']]],
   ['imbalance_5fshares',['imbalance_shares',['../structjb_1_1itch5_1_1net__order__imbalance__indicator__message.html#a8eb4065c28520c0e678cee59522d92cf',1,'jb::itch5::net_order_imbalance_indicator_message']]],
@@ -30,6 +31,7 @@ var searchData=
   ['ipo_5fquoting_5fperiod_5fupdate_5fmessage',['ipo_quoting_period_update_message',['../structjb_1_1itch5_1_1ipo__quoting__period__update__message.html',1,'jb::itch5']]],
   ['ipo_5fquoting_5fperiod_5fupdate_5fmessage_2ecpp',['ipo_quoting_period_update_message.cpp',['../ipo__quoting__period__update__message_8cpp.html',1,'']]],
   ['ipo_5fquoting_5fperiod_5fupdate_5fmessage_2ehpp',['ipo_quoting_period_update_message.hpp',['../ipo__quoting__period__update__message_8hpp.html',1,'']]],
+  ['is_5fascending',['is_ascending',['../classjb_1_1itch5_1_1array__based__book__side.html#adebb2c5bf75130e993fee00b5f03b34c',1,'jb::itch5::array_based_book_side::is_ascending()'],['../classjb_1_1itch5_1_1map__based__book__side.html#a3804087e3e1b788fcfae917d69ced0b8',1,'jb::itch5::map_based_book_side::is_ascending()']]],
   ['is_5fgz',['is_gz',['../namespacejb.html#a98980653629e6ad01527591d1a072cf8',1,'jb']]],
   ['is_5fpositional',['is_positional',['../structjb_1_1config__object_1_1attribute__descriptor.html#a4009947367cd37a8b06fb30703d80596',1,'jb::config_object::attribute_descriptor']]],
   ['issue_5fclassification',['issue_classification',['../structjb_1_1itch5_1_1stock__directory__message.html#aaf4eb9152a69d2faf67f2d525f453fbf',1,'jb::itch5::stock_directory_message']]],
@@ -42,6 +44,7 @@ var searchData=
   ['itch5inside_2ecpp',['itch5inside.cpp',['../itch5inside_8cpp.html',1,'']]],
   ['itch5moldreplay_2ecpp',['itch5moldreplay.cpp',['../itch5moldreplay_8cpp.html',1,'']]],
   ['itch5stats_2ecpp',['itch5stats.cpp',['../itch5stats_8cpp.html',1,'']]],
+  ['itch5trades_2ecpp',['itch5trades.cpp',['../itch5trades_8cpp.html',1,'']]],
   ['iterations',['iterations',['../classjb_1_1testing_1_1microbenchmark__config.html#a7bb7cde49db7372c0966ae786b60fd51',1,'jb::testing::microbenchmark_config::iterations()'],['../namespacejb_1_1testing_1_1defaults.html#a37c60b5fb550eaac95e60ad65a1bf1f6',1,'jb::testing::defaults::iterations()']]],
   ['itch_2d5_2e0_3a_20confused_20about_20securities_2c_20symbols_2c_20and_20tickers',['ITCH-5.0: Confused about Securities, Symbols, and Tickers',['../securities-vs-symbols.html',1,'']]]
 ];

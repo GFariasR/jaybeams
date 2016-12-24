@@ -97,8 +97,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classjb_1_1itch5_1_1map__based__book__side-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -111,13 +111,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjb_1_1itch5_1_1map__based__book__side_1_1side.html">side</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">template specialization struct to handle differences between BUY and SELL version SELL side  <a href="structjb_1_1itch5_1_1map__based__book__side_1_1side.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjb_1_1itch5_1_1map__based__book__side_1_1side_3_01std_1_1greater_3_01price4__t_01_4_00_01DUMMY_01_4.html">side&lt; std::greater&lt; price4_t &gt;, DUMMY &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">version BUY side  <a href="structjb_1_1itch5_1_1map__based__book__side_1_1side_3_01std_1_1greater_3_01price4__t_01_4_00_01DUMMY_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae89809c2fff9cef0c6cc23b90317e8b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html#ae89809c2fff9cef0c6cc23b90317e8b7">map_based_book_side</a> (<a class="el" href="classjb_1_1itch5_1_1map__based__order__book_1_1config.html">map_based_order_book::config</a> const &amp;cfg)</td></tr>
 <tr class="memdesc:ae89809c2fff9cef0c6cc23b90317e8b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an empty side order book.  <a href="#ae89809c2fff9cef0c6cc23b90317e8b7">More...</a><br /></td></tr>
 <tr class="separator:ae89809c2fff9cef0c6cc23b90317e8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c5e237b4264105e48c724b3316df118"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejb_1_1itch5.html#adbd4336049c6195a48cb314a385a750b">half_quote</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html#a9c5e237b4264105e48c724b3316df118">empty_quote</a> () const </td></tr>
-<tr class="separator:a9c5e237b4264105e48c724b3316df118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aead2733599baf8839691897ec55d87db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejb_1_1itch5.html#adbd4336049c6195a48cb314a385a750b">half_quote</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html#aead2733599baf8839691897ec55d87db">best_quote</a> () const </td></tr>
 <tr class="separator:aead2733599baf8839691897ec55d87db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a775b16ceef91b6c42dde5b3942131a79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacejb_1_1itch5.html#adbd4336049c6195a48cb314a385a750b">half_quote</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html#a775b16ceef91b6c42dde5b3942131a79">worst_quote</a> () const </td></tr>
@@ -130,26 +137,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abce7dd4fbf2d73a6c30d6c9172e7943d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html#abce7dd4fbf2d73a6c30d6c9172e7943d">reduce_order</a> (<a class="el" href="namespacejb_1_1itch5.html#afbe422fcea46cc63c32e32644576d188">price4_t</a> px, int reduced_qty)</td></tr>
 <tr class="memdesc:abce7dd4fbf2d73a6c30d6c9172e7943d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduce the quantity for a given price.  <a href="#abce7dd4fbf2d73a6c30d6c9172e7943d">More...</a><br /></td></tr>
 <tr class="separator:abce7dd4fbf2d73a6c30d6c9172e7943d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa7ff09e3b79536493d91bc982bdfd69"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html#afa7ff09e3b79536493d91bc982bdfd69">price_comp</a> (<a class="el" href="namespacejb_1_1itch5.html#afbe422fcea46cc63c32e32644576d188">price4_t</a> const &amp;px1, <a class="el" href="namespacejb_1_1itch5.html#afbe422fcea46cc63c32e32644576d188">price4_t</a> const &amp;px2) const </td></tr>
-<tr class="memdesc:afa7ff09e3b79536493d91bc982bdfd69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testing hook.  <a href="#afa7ff09e3b79536493d91bc982bdfd69">More...</a><br /></td></tr>
-<tr class="separator:afa7ff09e3b79536493d91bc982bdfd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:abc756e655271d65acec0450ab7c2498a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacejb_1_1itch5.html#adbd4336049c6195a48cb314a385a750b">half_quote</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html#abc756e655271d65acec0450ab7c2498a">empty_bid</a> ()</td></tr>
-<tr class="memdesc:abc756e655271d65acec0450ab7c2498a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value used to represent an empty bid.  <a href="#abc756e655271d65acec0450ab7c2498a">More...</a><br /></td></tr>
-<tr class="separator:abc756e655271d65acec0450ab7c2498a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dce66d99bc557ef4e8451ecfe8ee451"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacejb_1_1itch5.html#adbd4336049c6195a48cb314a385a750b">half_quote</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html#a2dce66d99bc557ef4e8451ecfe8ee451">empty_offer</a> ()</td></tr>
-<tr class="memdesc:a2dce66d99bc557ef4e8451ecfe8ee451"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value used to represent an empty offer.  <a href="#a2dce66d99bc557ef4e8451ecfe8ee451">More...</a><br /></td></tr>
-<tr class="separator:a2dce66d99bc557ef4e8451ecfe8ee451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3804087e3e1b788fcfae917d69ced0b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html#a3804087e3e1b788fcfae917d69ced0b8">is_ascending</a> () const </td></tr>
+<tr class="memdesc:a3804087e3e1b788fcfae917d69ced0b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Testing hook.  <a href="#a3804087e3e1b788fcfae917d69ced0b8">More...</a><br /></td></tr>
+<tr class="separator:a3804087e3e1b788fcfae917d69ced0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:af9ad462cefa5d61e1bc31517dc95be7b"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespacejb_1_1itch5.html#afbe422fcea46cc63c32e32644576d188">price4_t</a>, int, compare_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html#af9ad462cefa5d61e1bc31517dc95be7b">levels_</a></td></tr>
 <tr class="separator:af9ad462cefa5d61e1bc31517dc95be7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4fa85572f2317149e6ba8a4bca4edb5"><td class="memItemLeft" align="right" valign="top">compare_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html#aa4fa85572f2317149e6ba8a4bca4edb5">better_</a></td></tr>
-<tr class="memdesc:aa4fa85572f2317149e6ba8a4bca4edb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">function object for inequality comparison of template parameter type.  <a href="#aa4fa85572f2317149e6ba8a4bca4edb5">More...</a><br /></td></tr>
-<tr class="separator:aa4fa85572f2317149e6ba8a4bca4edb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename compare_t&gt;<br />
@@ -240,7 +235,7 @@ template&lt;typename compare_t &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the inside changed </dd></dl>
 
-<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00097">97</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
+<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00088">88</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
 
 </div>
 </div>
@@ -268,7 +263,7 @@ template&lt;typename compare_t &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the best side price and quantity </dd></dl>
 
-<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00068">68</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
+<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00059">59</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
 
 </div>
 </div>
@@ -296,11 +291,11 @@ template&lt;typename compare_t &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the number of levels with non-zero quantity for the order side. </dd></dl>
 
-<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00086">86</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
+<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00077">77</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abc756e655271d65acec0450ab7c2498a"></a>
+<a class="anchor" id="a3804087e3e1b788fcfae917d69ced0b8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -310,65 +305,7 @@ template&lt;typename compare_t &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="namespacejb_1_1itch5.html#adbd4336049c6195a48cb314a385a750b">half_quote</a> <a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html">jb::itch5::map_based_book_side</a>&lt; compare_t &gt;::empty_bid </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The value used to represent an empty bid. </p>
-
-<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00142">142</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2dce66d99bc557ef4e8451ecfe8ee451"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename compare_t &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="namespacejb_1_1itch5.html#adbd4336049c6195a48cb314a385a750b">half_quote</a> <a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html">jb::itch5::map_based_book_side</a>&lt; compare_t &gt;::empty_offer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The value used to represent an empty offer. </p>
-
-<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00147">147</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9c5e237b4264105e48c724b3316df118"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename compare_t &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacejb_1_1itch5.html#adbd4336049c6195a48cb314a385a750b">half_quote</a> <a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html">jb::itch5::map_based_book_side</a>&lt; compare_t &gt;::empty_quote </td>
+          <td class="memname">bool <a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html">jb::itch5::map_based_book_side</a>&lt; compare_t &gt;::is_ascending </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -380,50 +317,11 @@ template&lt;typename compare_t &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>an empty bid or offer based on compare function empty bid for less, empty offer for greater. </dd></dl>
-
-<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00060">60</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afa7ff09e3b79536493d91bc982bdfd69"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename compare_t &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html">jb::itch5::map_based_book_side</a>&lt; compare_t &gt;::price_comp </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacejb_1_1itch5.html#afbe422fcea46cc63c32e32644576d188">price4_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>px1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacejb_1_1itch5.html#afbe422fcea46cc63c32e32644576d188">price4_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>px2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 <p>Testing hook. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if px2 is a higher price than px1 To discriminate different implementations for buy and sell sides during testing. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if side is in ascending order (BUY side) To discriminate different implementations for buy and sell sides during testing. </dd></dl>
 
-<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00136">136</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
+<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00127">127</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
 
 </div>
 </div>
@@ -471,7 +369,7 @@ template&lt;typename compare_t &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the inside changed </dd></dl>
 
-<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00110">110</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
+<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00101">101</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
 
 <p>References <a class="el" href="log_8hpp_source.html#l00070">JB_LOG</a>, and <a class="el" href="namespacejb.html#a8c91d72478d03f9b72486db893bf4603a7b83d3f08fa392b79e3f553b585971cd">jb::warning</a>.</p>
 
@@ -501,38 +399,11 @@ template&lt;typename compare_t &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the worst side price and quantity </dd></dl>
 
-<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00077">77</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
+<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00068">68</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aa4fa85572f2317149e6ba8a4bca4edb5"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename compare_t &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">compare_t <a class="el" href="classjb_1_1itch5_1_1map__based__book__side.html">jb::itch5::map_based_book_side</a>&lt; compare_t &gt;::better_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>function object for inequality comparison of template parameter type. </p>
-<p>if better_(p1,p2) is true means p1 is strictly a better price than p2 </p>
-
-<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00155">155</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="af9ad462cefa5d61e1bc31517dc95be7b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -553,7 +424,7 @@ template&lt;typename compare_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00152">152</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
+<p>Definition at line <a class="el" href="map__based__order__book_8hpp_source.html#l00155">155</a> of file <a class="el" href="map__based__order__book_8hpp_source.html">map_based_order_book.hpp</a>.</p>
 
 </div>
 </div>
