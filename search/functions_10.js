@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['tde_5fresult',['tde_result',['../classjb_1_1fftw_1_1tde__result.html#a0e71be136c7e77e9486b25e7f019181b',1,'jb::fftw::tde_result::tde_result()'],['../classjb_1_1fftw_1_1tde__result_3_01jb_1_1fftw_1_1aligned__multi__array_3_01T_00_01K_01_4_00_01value__t_01_4.html#afec08c618fe00ef9c8fff9ef2c960432',1,'jb::fftw::tde_result&lt; jb::fftw::aligned_multi_array&lt; T, K &gt;, value_t &gt;::tde_result()'],['../classjb_1_1fftw_1_1tde__result_3_01jb_1_1fftw_1_1aligned__multi__array_3_01T_00_011_01_4_00_01value__t_01_4.html#a4ab9000ca8d87099f1157028dcba428a',1,'jb::fftw::tde_result&lt; jb::fftw::aligned_multi_array&lt; T, 1 &gt;, value_t &gt;::tde_result()']]],
+  ['tde_5fresult_5fclose_5fenough',['tde_result_close_enough',['../namespacejb_1_1testing.html#ac40d463f2504be7dff6a551f5c61088d',1,'jb::testing']]],
   ['test_5fcompute_5fbook_5fadd_5forder_5fmessage_5fbuy',['test_compute_book_add_order_message_buy',['../namespacejb_1_1itch5_1_1testing.html#a3dc5f5746357651d9b26b9963ad4da4c',1,'jb::itch5::testing']]],
   ['test_5fcompute_5fbook_5fadd_5forder_5fmessage_5fsell',['test_compute_book_add_order_message_sell',['../namespacejb_1_1itch5_1_1testing.html#aa1a1421ee68e51992ef2f7fb654e8ead',1,'jb::itch5::testing']]],
   ['test_5fcompute_5fbook_5fedge_5fcases',['test_compute_book_edge_cases',['../namespacejb_1_1itch5_1_1testing.html#a001a17d641cabdef9f9c0393bc311da8',1,'jb::itch5::testing']]],
@@ -31,6 +33,7 @@ var searchData=
   ['thread_5fsetup_5fwrapper',['thread_setup_wrapper',['../structjb_1_1detail_1_1thread__setup__wrapper.html#a5f459835f8d9cd0541319aad38e9b6ef',1,'jb::detail::thread_setup_wrapper']]],
   ['tid',['tid',['../namespacejb_1_1log.html#a0a9a49c9901bf9e9a1cfb22856133e87',1,'jb::log']]],
   ['time_5fdelay_5festimator',['time_delay_estimator',['../classjb_1_1fftw_1_1time__delay__estimator.html#a095673ce0301fd5f8d10149d69bed2ae',1,'jb::fftw::time_delay_estimator']]],
+  ['time_5fdelay_5festimator_5fmany',['time_delay_estimator_many',['../classjb_1_1fftw_1_1time__delay__estimator__many.html#a9e52c9b7b9457664e009814f7f7b72ad',1,'jb::fftw::time_delay_estimator_many']]],
   ['to_5fstream',['to_stream',['../classjb_1_1config__object.html#a2e6cb95f0f698146271dc7a1f039ba44',1,'jb::config_object']]],
   ['to_5fstring',['to_string',['../classjb_1_1clfft_1_1clfft__error.html#a13a15584f477db40a99da625baddc0d9',1,'jb::clfft::clfft_error']]],
   ['to_5fwhat',['to_what',['../classjb_1_1clfft_1_1clfft__error.html#a6a25d996cc50ad111fd5f7f3f8f2b287',1,'jb::clfft::clfft_error']]],

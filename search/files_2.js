@@ -9,6 +9,7 @@ var searchData=
   ['check_5fmulti_5farray_5fclose_5fenough_2ehpp',['check_multi_array_close_enough.hpp',['../check__multi__array__close__enough_8hpp.html',1,'']]],
   ['check_5foffset_2ecpp',['check_offset.cpp',['../check__offset_8cpp.html',1,'']]],
   ['check_5foffset_2ehpp',['check_offset.hpp',['../check__offset_8hpp.html',1,'']]],
+  ['check_5ftde_5fresult_5fclose_5fenough_2ehpp',['check_tde_result_close_enough.hpp',['../check__tde__result__close__enough_8hpp.html',1,'']]],
   ['check_5fvector_5fclose_5fenough_2ehpp',['check_vector_close_enough.hpp',['../check__vector__close__enough_8hpp.html',1,'']]],
   ['compile_5finfo_2ecpp',['compile_info.cpp',['../compile__info_8cpp.html',1,'']]],
   ['compile_5finfo_2ehpp',['compile_info.hpp',['../compile__info_8hpp.html',1,'']]],

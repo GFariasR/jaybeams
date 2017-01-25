@@ -29,5 +29,6 @@ var searchData=
   ['format_5fcommon',['format_common',['../namespacejb_1_1log.html#ae581422a6b97f68c5ae158adcb996475',1,'jb::log']]],
   ['format_5fconsole',['format_console',['../namespacejb_1_1log.html#a88747cd1b7f484229e6ecf593101b9ff',1,'jb::log']]],
   ['format_5flogfile',['format_logfile',['../namespacejb_1_1log.html#aa65a621a87f71eea97959854b1c45e07',1,'jb::log']]],
+  ['frequency_5farray_5ftype',['frequency_array_type',['../classjb_1_1fftw_1_1time__delay__estimator__many.html#a6e785d7f723b7bc4481d8a960f03e703',1,'jb::fftw::time_delay_estimator_many']]],
   ['frequency_5ftimeseries_5ftype',['frequency_timeseries_type',['../classjb_1_1fftw_1_1time__delay__estimator.html#afda95d5c74559cff998110d97fe74fdf',1,'jb::fftw::time_delay_estimator']]]
 ];
