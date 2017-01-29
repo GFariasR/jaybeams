@@ -105,6 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;<a class="el" href="aligned__multi__array_8hpp_source.html">jb/fftw/aligned_multi_array.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="aligned__vector_8hpp_source.html">jb/fftw/aligned_vector.hpp</a>&gt;</code><br />
 <code>#include &lt;boost/multi_array.hpp&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="array__traits_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -123,6 +124,15 @@ Classes</h2></td></tr>
 <tr class="memitem:structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejb_1_1detail.html#structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4">jb::detail::aligned_container&lt; value_type, boost::multi_array&lt; T, K, A &gt; &gt;</a></td></tr>
 <tr class="memdesc:structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias array_type based on the boost::multi_array type shape to store value_type.  <a href="namespacejb_1_1detail.html#structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4">More...</a><br /></td></tr>
 <tr class="separator:structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjb_1_1detail_1_1always__aligned.html">jb::detail::always_aligned&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a timeseries type guarantees alignment suitable for SIMD optimizations.  <a href="structjb_1_1detail_1_1always__aligned.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjb_1_1detail_1_1always__aligned_3_01jb_1_1fftw_1_1aligned__vector_3_01T_01_4_01_4.html">jb::detail::always_aligned&lt; jb::fftw::aligned_vector&lt; T &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a aligned_vector timeseries type guarantees alignment suitable for SIMD optimizations.  <a href="structjb_1_1detail_1_1always__aligned_3_01jb_1_1fftw_1_1aligned__vector_3_01T_01_4_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjb_1_1detail_1_1always__aligned_3_01jb_1_1fftw_1_1aligned__multi__array_3_01T_00_01K_01_4_01_4.html">jb::detail::always_aligned&lt; jb::fftw::aligned_multi_array&lt; T, K &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a aligned_multi_array timeseries type guarantees alignment suitable for SIMD optimizations.  <a href="structjb_1_1detail_1_1always__aligned_3_01jb_1_1fftw_1_1aligned__multi__array_3_01T_00_01K_01_4_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -181,7 +191,7 @@ struct jb::detail::array_traits&lt; container_type &gt;</h3>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00023">23</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00024">24</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
@@ -216,7 +226,7 @@ struct jb::detail::aligned_container&lt; value_type, container_type &gt;</h3>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00041">41</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00042">42</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
@@ -253,7 +263,7 @@ struct jb::detail::array_traits&lt; boost::multi_array&lt; T, K, A &gt; &gt;</h3
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00096">96</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00097">97</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
@@ -291,7 +301,7 @@ struct jb::detail::aligned_container&lt; value_type, boost::multi_array&lt; T, K
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00114">114</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00115">115</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">

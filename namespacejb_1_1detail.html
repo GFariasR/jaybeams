@@ -110,6 +110,15 @@ Classes</h2></td></tr>
 <tr class="memitem:structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejb_1_1detail.html#structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4">aligned_container&lt; value_type, boost::multi_array&lt; T, K, A &gt; &gt;</a></td></tr>
 <tr class="memdesc:structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias array_type based on the boost::multi_array type shape to store value_type.  <a href="namespacejb_1_1detail.html#structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4">More...</a><br /></td></tr>
 <tr class="separator:structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjb_1_1detail_1_1always__aligned.html">always_aligned</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a timeseries type guarantees alignment suitable for SIMD optimizations.  <a href="structjb_1_1detail_1_1always__aligned.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjb_1_1detail_1_1always__aligned_3_01jb_1_1fftw_1_1aligned__multi__array_3_01T_00_01K_01_4_01_4.html">always_aligned&lt; jb::fftw::aligned_multi_array&lt; T, K &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a aligned_multi_array timeseries type guarantees alignment suitable for SIMD optimizations.  <a href="structjb_1_1detail_1_1always__aligned_3_01jb_1_1fftw_1_1aligned__multi__array_3_01T_00_01K_01_4_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structjb_1_1detail_1_1always__aligned_3_01jb_1_1fftw_1_1aligned__vector_3_01T_01_4_01_4.html">always_aligned&lt; jb::fftw::aligned_vector&lt; T &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a aligned_vector timeseries type guarantees alignment suitable for SIMD optimizations.  <a href="structjb_1_1detail_1_1always__aligned_3_01jb_1_1fftw_1_1aligned__vector_3_01T_01_4_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structjb_1_1detail_1_1array__traits"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejb_1_1detail.html#structjb_1_1detail_1_1array__traits">array_traits</a></td></tr>
 <tr class="memdesc:structjb_1_1detail_1_1array__traits"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias element type stored on a container.  <a href="namespacejb_1_1detail.html#structjb_1_1detail_1_1array__traits">More...</a><br /></td></tr>
 <tr class="separator:structjb_1_1detail_1_1array__traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,7 +189,7 @@ struct jb::detail::aligned_container&lt; value_type, container_type &gt;</h3>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00041">41</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00042">42</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
@@ -218,7 +227,7 @@ struct jb::detail::aligned_container&lt; value_type, boost::multi_array&lt; T, K
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00114">114</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00115">115</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
@@ -254,7 +263,7 @@ struct jb::detail::array_traits&lt; container_type &gt;</h3>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00023">23</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00024">24</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
@@ -290,7 +299,7 @@ struct jb::detail::array_traits&lt; boost::multi_array&lt; T, K, A &gt; &gt;</h3
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00096">96</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00097">97</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
@@ -338,7 +347,7 @@ template&lt;typename container_type &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00081">81</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00082">82</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="tde__result_8hpp_source.html#l00086">jb::fftw::tde_result&lt; boost::multi_array&lt; T, K, A &gt;, value_t &gt;::tde_result()</a>.</p>
 
@@ -379,7 +388,7 @@ template&lt;typename T , std::size_t K, typename A &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00163">163</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00164">164</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 
 </div>
 </div>
@@ -416,9 +425,9 @@ template&lt;typename container_type &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00054">54</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00055">55</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="fftw_2plan_8hpp_source.html#l00263">jb::fftw::create_backward_plan()</a>, <a class="el" href="fftw_2plan_8hpp_source.html#l00232">jb::fftw::create_forward_plan()</a>, <a class="el" href="create__triangle__timeseries_8hpp_source.html#l00039">jb::testing::create_triangle_timeseries()</a>, <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00106">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>, <a class="el" href="fftw_2plan_8hpp_source.html#l00106">jb::fftw::plan&lt; timeseries_type, frequency_timeseries_type &gt;::execute()</a>, and <a class="el" href="tde__result_8hpp_source.html#l00086">jb::fftw::tde_result&lt; boost::multi_array&lt; T, K, A &gt;, value_t &gt;::tde_result()</a>.</p>
+<p>Referenced by <a class="el" href="fftw_2plan_8hpp_source.html#l00263">jb::fftw::create_backward_plan()</a>, <a class="el" href="fftw_2plan_8hpp_source.html#l00232">jb::fftw::create_forward_plan()</a>, <a class="el" href="create__triangle__timeseries_8hpp_source.html#l00038">jb::testing::create_triangle_timeseries()</a>, <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00105">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>, <a class="el" href="fftw_2plan_8hpp_source.html#l00106">jb::fftw::plan&lt; timeseries_type, frequency_timeseries_type &gt;::execute()</a>, and <a class="el" href="tde__result_8hpp_source.html#l00104">jb::fftw::tde_result&lt; boost::multi_array&lt; T, K, A &gt;, value_t &gt;::size()</a>.</p>
 
 </div>
 </div>
@@ -457,7 +466,7 @@ template&lt;typename T , std::size_t K, typename A &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00130">130</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00131">131</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 
 </div>
 </div>
@@ -528,9 +537,9 @@ template&lt;typename container_type &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00067">67</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00068">68</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="ut__time__delay__estimator_8cpp_source.html#l00011">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="fftw_2plan_8hpp_source.html#l00263">jb::fftw::create_backward_plan()</a>, <a class="el" href="fftw_2plan_8hpp_source.html#l00232">jb::fftw::create_forward_plan()</a>, <a class="el" href="create__random__timeseries_8hpp_source.html#l00013">jb::testing::create_random_timeseries()</a>, <a class="el" href="create__square__timeseries_8hpp_source.html#l00013">jb::testing::create_square_timeseries()</a>, <a class="el" href="create__triangle__timeseries_8hpp_source.html#l00039">jb::testing::create_triangle_timeseries()</a>, <a class="el" href="fftw_2plan_8hpp_source.html#l00106">jb::fftw::plan&lt; timeseries_type, frequency_timeseries_type &gt;::execute()</a>, and <a class="el" href="tde__result_8hpp_source.html#l00086">jb::fftw::tde_result&lt; boost::multi_array&lt; T, K, A &gt;, value_t &gt;::tde_result()</a>.</p>
+<p>Referenced by <a class="el" href="ut__time__delay__estimator_8cpp_source.html#l00011">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="fftw_2plan_8hpp_source.html#l00263">jb::fftw::create_backward_plan()</a>, <a class="el" href="fftw_2plan_8hpp_source.html#l00232">jb::fftw::create_forward_plan()</a>, <a class="el" href="create__random__timeseries_8hpp_source.html#l00013">jb::testing::create_random_timeseries()</a>, <a class="el" href="create__square__timeseries_8hpp_source.html#l00013">jb::testing::create_square_timeseries()</a>, <a class="el" href="create__triangle__timeseries_8hpp_source.html#l00038">jb::testing::create_triangle_timeseries()</a>, and <a class="el" href="fftw_2plan_8hpp_source.html#l00106">jb::fftw::plan&lt; timeseries_type, frequency_timeseries_type &gt;::execute()</a>.</p>
 
 </div>
 </div>
@@ -569,7 +578,7 @@ template&lt;typename T , std::size_t K, typename A &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00146">146</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00147">147</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 
 </div>
 </div>

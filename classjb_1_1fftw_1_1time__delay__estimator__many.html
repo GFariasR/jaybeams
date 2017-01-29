@@ -141,9 +141,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:aa8c96cc423b22e8be2b45158c422d799"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#aa8c96cc423b22e8be2b45158c422d799">confidence_type</a> = <a class="el" href="classjb_1_1fftw_1_1tde__result.html">jb::fftw::tde_result</a>&lt; array_t, <a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a43897df1ba454825202a1a0223d6a287">precision_type</a> &gt;</td></tr>
 <tr class="memdesc:aa8c96cc423b22e8be2b45158c422d799"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type used to store the TDE confidence between two timeseries.  <a href="#aa8c96cc423b22e8be2b45158c422d799">More...</a><br /></td></tr>
 <tr class="separator:aa8c96cc423b22e8be2b45158c422d799"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75cbe90609e0aa7c255750b0af777533"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a75cbe90609e0aa7c255750b0af777533">argmax_type</a> = <a class="el" href="classjb_1_1fftw_1_1tde__result.html">jb::fftw::tde_result</a>&lt; array_t, std::size_t &gt;</td></tr>
-<tr class="memdesc:a75cbe90609e0aa7c255750b0af777533"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type used to store the TDE argmax between two timeseries.  <a href="#a75cbe90609e0aa7c255750b0af777533">More...</a><br /></td></tr>
-<tr class="separator:a75cbe90609e0aa7c255750b0af777533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a229485aaad73c192609831044d2676"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a9a229485aaad73c192609831044d2676">estimated_delay_type</a> = <a class="el" href="classjb_1_1fftw_1_1tde__result.html">jb::fftw::tde_result</a>&lt; array_t, std::size_t &gt;</td></tr>
+<tr class="memdesc:a9a229485aaad73c192609831044d2676"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type used to store the estimated_delay between two timeseries.  <a href="#a9a229485aaad73c192609831044d2676">More...</a><br /></td></tr>
+<tr class="separator:a9a229485aaad73c192609831044d2676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0d36adef72e09992018445aa2200157"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#ab0d36adef72e09992018445aa2200157">sum2_type</a> = <a class="el" href="classjb_1_1fftw_1_1tde__result.html">jb::fftw::tde_result</a>&lt; array_t, <a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a43897df1ba454825202a1a0223d6a287">precision_type</a> &gt;</td></tr>
 <tr class="memdesc:ab0d36adef72e09992018445aa2200157"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sqr sum of a timeseries.  <a href="#ab0d36adef72e09992018445aa2200157">More...</a><br /></td></tr>
 <tr class="separator:ab0d36adef72e09992018445aa2200157"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,9 +153,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5761faa777f156f565944e0b883ac450"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a5761faa777f156f565944e0b883ac450">time_delay_estimator_many</a> (<a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a2c5168e57f67c5092f03c4f6916debc2">array_type</a> &amp;a, <a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a2c5168e57f67c5092f03c4f6916debc2">array_type</a> &amp;b)</td></tr>
 <tr class="memdesc:a5761faa777f156f565944e0b883ac450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a time delay estimator using <em>a</em> and <em>b</em> as prototypes for the arguments.  <a href="#a5761faa777f156f565944e0b883ac450">More...</a><br /></td></tr>
 <tr class="separator:a5761faa777f156f565944e0b883ac450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e8ae81e0734bef9f67aad78a5c39ffe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a5e8ae81e0734bef9f67aad78a5c39ffe">estimate_delay</a> (<a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#aa8c96cc423b22e8be2b45158c422d799">confidence_type</a> &amp;confidence, <a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a75cbe90609e0aa7c255750b0af777533">argmax_type</a> &amp;argmax, <a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a2c5168e57f67c5092f03c4f6916debc2">array_type</a> &amp;a, <a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a2c5168e57f67c5092f03c4f6916debc2">array_type</a> &amp;b, <a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#ab0d36adef72e09992018445aa2200157">sum2_type</a> const &amp;sum2)</td></tr>
-<tr class="memdesc:a5e8ae81e0734bef9f67aad78a5c39ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the time-delay estimate between two timeseries a and b.  <a href="#a5e8ae81e0734bef9f67aad78a5c39ffe">More...</a><br /></td></tr>
-<tr class="separator:a5e8ae81e0734bef9f67aad78a5c39ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659e3b2419c8963c891b3173c0342774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a659e3b2419c8963c891b3173c0342774">estimate_delay</a> (<a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#aa8c96cc423b22e8be2b45158c422d799">confidence_type</a> &amp;confidence, <a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a9a229485aaad73c192609831044d2676">estimated_delay_type</a> &amp;estimated_delay, <a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a2c5168e57f67c5092f03c4f6916debc2">array_type</a> &amp;a, <a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a2c5168e57f67c5092f03c4f6916debc2">array_type</a> &amp;b, <a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#ab0d36adef72e09992018445aa2200157">sum2_type</a> const &amp;sum2)</td></tr>
+<tr class="memdesc:a659e3b2419c8963c891b3173c0342774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the time-delay estimate between two timeseries a and b.  <a href="#a659e3b2419c8963c891b3173c0342774">More...</a><br /></td></tr>
+<tr class="separator:a659e3b2419c8963c891b3173c0342774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
@@ -205,24 +205,6 @@ class jb::fftw::time_delay_estimator_many&lt; array_t &gt;</h3>
 
 <p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00021">21</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="a75cbe90609e0aa7c255750b0af777533"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename array_t &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html">jb::fftw::time_delay_estimator_many</a>&lt; array_t &gt;::<a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a75cbe90609e0aa7c255750b0af777533">argmax_type</a> =  <a class="el" href="classjb_1_1fftw_1_1tde__result.html">jb::fftw::tde_result</a>&lt;array_t, std::size_t&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The type used to store the TDE argmax between two timeseries. </p>
-
-<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00062">62</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a2c5168e57f67c5092f03c4f6916debc2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -310,6 +292,24 @@ template&lt;typename array_t &gt; </div>
 <p>The values stored in the input timeseries. </p>
 
 <p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00033">33</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a229485aaad73c192609831044d2676"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename array_t &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html">jb::fftw::time_delay_estimator_many</a>&lt; array_t &gt;::<a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a9a229485aaad73c192609831044d2676">estimated_delay_type</a> =  <a class="el" href="classjb_1_1fftw_1_1tde__result.html">jb::fftw::tde_result</a>&lt;array_t, std::size_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The type used to store the estimated_delay between two timeseries. </p>
+
+<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00062">62</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
 
 </div>
 </div>
@@ -440,7 +440,7 @@ template&lt;typename array_t &gt; </div>
 
 <p>Constructs a time delay estimator using <em>a</em> and <em>b</em> as prototypes for the arguments. </p>
 <p>The optimal algorithm to compute the FFTs used in the cross correlation depends on the size of the input parameters and their memory alignment.</p>
-<p>The FFTW library casts the constness of their arguments to change their values, so we are making it explicit pasing non-const reference arguments to the constructor.</p>
+<p>The FFTW library modifies the arguments to compute the optimal execution plan, do not assume the values are unmodified.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">a</td><td>multi array timeseries </td></tr>
@@ -449,12 +449,12 @@ template&lt;typename array_t &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00083">83</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
+<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00082">82</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5e8ae81e0734bef9f67aad78a5c39ffe"></a>
+<a class="anchor" id="a659e3b2419c8963c891b3173c0342774"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -472,8 +472,8 @@ template&lt;typename array_t &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a75cbe90609e0aa7c255750b0af777533">argmax_type</a> &amp;&#160;</td>
-          <td class="paramname"><em>argmax</em>, </td>
+          <td class="paramtype"><a class="el" href="classjb_1_1fftw_1_1time__delay__estimator__many.html#a9a229485aaad73c192609831044d2676">estimated_delay_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>estimated_delay</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -509,8 +509,8 @@ template&lt;typename array_t &gt; </div>
 <p>Compute the time-delay estimate between two timeseries a and b. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">confidence</td><td>to return the confidence of TDE(a,b) </td></tr>
-    <tr><td class="paramname">argmax</td><td>to return argmax of TDE(a,b) </td></tr>
+    <tr><td class="paramname">confidence</td><td>to return the TDE(a,b) confidence </td></tr>
+    <tr><td class="paramname">estimated_delay</td><td>to return the result of TDE(a,b) </td></tr>
     <tr><td class="paramname">a</td><td>input timeseries, FFTW library might modify their values </td></tr>
     <tr><td class="paramname">b</td><td>input timeseries, FFTW library might modify their values </td></tr>
     <tr><td class="paramname">sum2</td><td>contains sqr sum of one of the timeseries (a or b) </td></tr>
@@ -518,9 +518,9 @@ template&lt;typename array_t &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00106">106</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
+<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00105">105</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
 
-<p>References <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00169">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::a2tmpa_</a>, <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00171">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::b2tmpb_</a>, <a class="el" href="check__close__enough_8hpp_source.html#l00034">jb::testing::check_close_enough()</a>, <a class="el" href="array__traits_8hpp_source.html#l00054">jb::detail::element_count()</a>, <a class="el" href="fftw_2plan_8hpp_source.html#l00106">jb::fftw::plan&lt; in_timeseries_type, out_timeseries_type &gt;::execute()</a>, <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00177">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::nsamples_</a>, <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00179">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::num_timeseries_</a>, <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00173">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::out_</a>, <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00175">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::tmpa2out_</a>, <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00165">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::tmpa_</a>, and <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00167">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::tmpb_</a>.</p>
+<p>References <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00168">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::a2tmpa_</a>, <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00170">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::b2tmpb_</a>, <a class="el" href="check__close__enough_8hpp_source.html#l00034">jb::testing::check_close_enough()</a>, <a class="el" href="array__traits_8hpp_source.html#l00055">jb::detail::element_count()</a>, <a class="el" href="fftw_2plan_8hpp_source.html#l00106">jb::fftw::plan&lt; in_timeseries_type, out_timeseries_type &gt;::execute()</a>, <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00176">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::nsamples_</a>, <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00178">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::num_timeseries_</a>, <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00172">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::out_</a>, <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00174">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::tmpa2out_</a>, <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00164">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::tmpa_</a>, and <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00166">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::tmpb_</a>.</p>
 
 </div>
 </div>
@@ -549,7 +549,7 @@ template&lt;typename array_t &gt; </div>
 
 <p>Determine the correct FFTW planning flags given the inputs. </p>
 
-<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00156">156</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
+<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00155">155</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
 
 </div>
 </div>
@@ -576,9 +576,9 @@ template&lt;typename array_t &gt; </div>
 
 <p>a2tmpa_ : fftw plan to execute FFT(a) </p>
 
-<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00169">169</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
+<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00168">168</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00106">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
+<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00105">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
 
 </div>
 </div>
@@ -604,9 +604,9 @@ template&lt;typename array_t &gt; </div>
 
 <p>b2tmpb_ : fftw plan to execute FFT(b) </p>
 
-<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00171">171</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
+<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00170">170</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00106">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
+<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00105">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
 
 </div>
 </div>
@@ -632,9 +632,9 @@ template&lt;typename array_t &gt; </div>
 
 <p>nsamples : num samples of timeseries </p>
 
-<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00177">177</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
+<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00176">176</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00106">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
+<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00105">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
 
 </div>
 </div>
@@ -660,9 +660,9 @@ template&lt;typename array_t &gt; </div>
 
 <p>num_timeseries : num of timeseries contained in a and b </p>
 
-<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00179">179</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
+<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00178">178</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00106">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
+<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00105">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
 
 </div>
 </div>
@@ -688,9 +688,9 @@ template&lt;typename array_t &gt; </div>
 
 <p>out_ : timeseries to store the result of inverse FFT </p>
 
-<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00173">173</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
+<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00172">172</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00106">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
+<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00105">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
 
 </div>
 </div>
@@ -716,9 +716,9 @@ template&lt;typename array_t &gt; </div>
 
 <p>tmpa2out : fftw plan to execute inverse FFT of a timeseries </p>
 
-<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00175">175</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
+<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00174">174</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00106">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
+<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00105">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
 
 </div>
 </div>
@@ -744,9 +744,9 @@ template&lt;typename array_t &gt; </div>
 
 <p>tmpa_ : timeseries to store the result of FFT(a) </p>
 
-<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00165">165</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
+<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00164">164</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00106">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
+<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00105">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
 
 </div>
 </div>
@@ -772,9 +772,9 @@ template&lt;typename array_t &gt; </div>
 
 <p>tmpb_ : timeseries to store the result of FFT(b) </p>
 
-<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00167">167</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
+<p>Definition at line <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00166">166</a> of file <a class="el" href="time__delay__estimator__many_8hpp_source.html">time_delay_estimator_many.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00106">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
+<p>Referenced by <a class="el" href="time__delay__estimator__many_8hpp_source.html#l00105">jb::fftw::time_delay_estimator_many&lt; array_t &gt;::estimate_delay()</a>.</p>
 
 </div>
 </div>
