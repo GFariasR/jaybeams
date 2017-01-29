@@ -18,6 +18,7 @@ var searchData=
   ['ut_5fcast_5fvector_2ecpp',['ut_cast_vector.cpp',['../ut__cast__vector_8cpp.html',1,'']]],
   ['ut_5fchar_5flist_5ffield_2ecpp',['ut_char_list_field.cpp',['../ut__char__list__field_8cpp.html',1,'']]],
   ['ut_5fchar_5flist_5fvalidator_2ecpp',['ut_char_list_validator.cpp',['../ut__char__list__validator_8cpp.html',1,'']]],
+  ['ut_5fcheck_5fclose_5fenough_2ecpp',['ut_check_close_enough.cpp',['../ut__check__close__enough_8cpp.html',1,'']]],
   ['ut_5fcheck_5foffset_2ecpp',['ut_check_offset.cpp',['../ut__check__offset_8cpp.html',1,'']]],
   ['ut_5fcompute_5fbook_2ecpp',['ut_compute_book.cpp',['../ut__compute__book_8cpp.html',1,'']]],
   ['ut_5fconfig_2ecpp',['ut_config.cpp',['../ut__config_8cpp.html',1,'']]],

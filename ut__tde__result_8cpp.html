@@ -103,6 +103,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;<a class="el" href="array__traits_8hpp_source.html">jb/detail/array_traits.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="aligned__multi__array_8hpp_source.html">jb/fftw/aligned_multi_array.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="tde__result_8hpp_source.html">jb/fftw/tde_result.hpp</a>&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;complex&gt;</code><br />
+<code>#include &lt;deque&gt;</code><br />
+<code>#include &lt;forward_list&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
 </div>
 <p><a href="ut__tde__result_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -111,10 +117,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Functions</h2></td></tr>
 <tr class="memitem:af676a62999ecd4249c585d33fb7f3d1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__tde__result_8cpp.html#af676a62999ecd4249c585d33fb7f3d1d">BOOST_AUTO_TEST_CASE</a> (fftw_tde_result_2_dim_usage)</td></tr>
 <tr class="separator:af676a62999ecd4249c585d33fb7f3d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e8a722fe5d31f163b9309a60f3345c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__tde__result_8cpp.html#a6e8a722fe5d31f163b9309a60f3345c4">BOOST_AUTO_TEST_CASE</a> (fftw_tde_result_2_dim_complex_usage)</td></tr>
+<tr class="separator:a6e8a722fe5d31f163b9309a60f3345c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227517698a0e71ed8453b58606edc4a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__tde__result_8cpp.html#a227517698a0e71ed8453b58606edc4a8">BOOST_AUTO_TEST_CASE</a> (fftw_tde_result_2_dim_complex_double_usage)</td></tr>
+<tr class="separator:a227517698a0e71ed8453b58606edc4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c9f777c6c975a611651364e44bc668c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__tde__result_8cpp.html#a4c9f777c6c975a611651364e44bc668c">BOOST_AUTO_TEST_CASE</a> (fftw_tde_result_1_dim_usage)</td></tr>
 <tr class="separator:a4c9f777c6c975a611651364e44bc668c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7a5f84846c5e56e79e0125f4e13545e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__tde__result_8cpp.html#af7a5f84846c5e56e79e0125f4e13545e">BOOST_AUTO_TEST_CASE</a> (fftw_tde_result_0_dim_usage)</td></tr>
-<tr class="separator:af7a5f84846c5e56e79e0125f4e13545e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f784b9b1eaa5df9e9269494f67fb82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__tde__result_8cpp.html#a08f784b9b1eaa5df9e9269494f67fb82">BOOST_AUTO_TEST_CASE</a> (fftw_tde_result_0_dim_multi_array_usage)</td></tr>
+<tr class="separator:a08f784b9b1eaa5df9e9269494f67fb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d89ec0582e37fa83dd1e12ea45feef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__tde__result_8cpp.html#ad8d89ec0582e37fa83dd1e12ea45feef">BOOST_AUTO_TEST_CASE</a> (fftw_tde_result_0_dim_array_usage)</td></tr>
+<tr class="separator:ad8d89ec0582e37fa83dd1e12ea45feef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106a26d078ffcd71296f01a0f4d8514d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__tde__result_8cpp.html#a106a26d078ffcd71296f01a0f4d8514d">BOOST_AUTO_TEST_CASE</a> (fftw_tde_result_0_dim_vector_usage)</td></tr>
+<tr class="separator:a106a26d078ffcd71296f01a0f4d8514d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf548ae2bef54d4a873fbd0a238cee32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__tde__result_8cpp.html#aaf548ae2bef54d4a873fbd0a238cee32">BOOST_AUTO_TEST_CASE</a> (fftw_tde_result_0_dim_deque_usage)</td></tr>
+<tr class="separator:aaf548ae2bef54d4a873fbd0a238cee32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad22116349abc9d168259de2dd2a9451b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__tde__result_8cpp.html#ad22116349abc9d168259de2dd2a9451b">BOOST_AUTO_TEST_CASE</a> (fftw_tde_result_0_dim_forward_list_usage)</td></tr>
+<tr class="separator:ad22116349abc9d168259de2dd2a9451b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9273b2858211e039273b08a8a509769f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ut__tde__result_8cpp.html#a9273b2858211e039273b08a8a509769f">BOOST_AUTO_TEST_CASE</a> (fftw_tde_result_0_dim_list_usage)</td></tr>
+<tr class="separator:a9273b2858211e039273b08a8a509769f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="af676a62999ecd4249c585d33fb7f3d1d"></a>
@@ -132,7 +152,45 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="test"><dt><b><a class="el" href="test.html#_test000040">Test:</a></b></dt><dd>Verify that we can create a 2 dim tde_result </dd></dl>
 
-<p>Definition at line <a class="el" href="ut__tde__result_8cpp_source.html#l00010">10</a> of file <a class="el" href="ut__tde__result_8cpp_source.html">ut_tde_result.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ut__tde__result_8cpp_source.html#l00017">17</a> of file <a class="el" href="ut__tde__result_8cpp_source.html">ut_tde_result.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e8a722fe5d31f163b9309a60f3345c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">fftw_tde_result_2_dim_complex_usage&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="test"><dt><b><a class="el" href="test.html#_test000041">Test:</a></b></dt><dd>Verify that we can create a 2 dim tde_result with std:complex values </dd></dl>
+
+<p>Definition at line <a class="el" href="ut__tde__result_8cpp_source.html#l00059">59</a> of file <a class="el" href="ut__tde__result_8cpp_source.html">ut_tde_result.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a227517698a0e71ed8453b58606edc4a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">fftw_tde_result_2_dim_complex_double_usage&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="test"><dt><b><a class="el" href="test.html#_test000042">Test:</a></b></dt><dd>Verify that we can create a 2 dim tde_result with std:complex values with std::complex result value </dd></dl>
+
+<p>Definition at line <a class="el" href="ut__tde__result_8cpp_source.html#l00102">102</a> of file <a class="el" href="ut__tde__result_8cpp_source.html">ut_tde_result.cpp</a>.</p>
 
 </div>
 </div>
@@ -149,28 +207,123 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="test"><dt><b><a class="el" href="test.html#_test000041">Test:</a></b></dt><dd>Verify that we can create a 1 dim tde_result </dd></dl>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000043">Test:</a></b></dt><dd>Verify that we can create a 1 dim tde_result based on an aligned_multi_array container.</dd></dl>
 
-<p>Definition at line <a class="el" href="ut__tde__result_8cpp_source.html#l00053">53</a> of file <a class="el" href="ut__tde__result_8cpp_source.html">ut_tde_result.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ut__tde__result_8cpp_source.html#l00147">147</a> of file <a class="el" href="ut__tde__result_8cpp_source.html">ut_tde_result.cpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af7a5f84846c5e56e79e0125f4e13545e"></a>
+<a class="anchor" id="a08f784b9b1eaa5df9e9269494f67fb82"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">BOOST_AUTO_TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">fftw_tde_result_0_dim_usage&#160;</td>
+          <td class="paramtype">fftw_tde_result_0_dim_multi_array_usage&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="test"><dt><b><a class="el" href="test.html#_test000042">Test:</a></b></dt><dd>Verify that we can create a 0 dim tde_result </dd></dl>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000044">Test:</a></b></dt><dd>Verify that we can create a 0 dim tde_result based on a aligned multi array container.</dd></dl>
 
-<p>Definition at line <a class="el" href="ut__tde__result_8cpp_source.html#l00090">90</a> of file <a class="el" href="ut__tde__result_8cpp_source.html">ut_tde_result.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ut__tde__result_8cpp_source.html#l00185">185</a> of file <a class="el" href="ut__tde__result_8cpp_source.html">ut_tde_result.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8d89ec0582e37fa83dd1e12ea45feef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">fftw_tde_result_0_dim_array_usage&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="test"><dt><b><a class="el" href="test.html#_test000045">Test:</a></b></dt><dd>Verify that we can create a 0 dim tde_result based on a array container.</dd></dl>
+
+<p>Definition at line <a class="el" href="ut__tde__result_8cpp_source.html#l00212">212</a> of file <a class="el" href="ut__tde__result_8cpp_source.html">ut_tde_result.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a106a26d078ffcd71296f01a0f4d8514d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">fftw_tde_result_0_dim_vector_usage&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="test"><dt><b><a class="el" href="test.html#_test000046">Test:</a></b></dt><dd>Verify that we can create a 0 dim tde_result based on a vector container.</dd></dl>
+
+<p>Definition at line <a class="el" href="ut__tde__result_8cpp_source.html#l00239">239</a> of file <a class="el" href="ut__tde__result_8cpp_source.html">ut_tde_result.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf548ae2bef54d4a873fbd0a238cee32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">fftw_tde_result_0_dim_deque_usage&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="test"><dt><b><a class="el" href="test.html#_test000047">Test:</a></b></dt><dd>Verify that we can create a 0 dim tde_result based on a deque container.</dd></dl>
+
+<p>Definition at line <a class="el" href="ut__tde__result_8cpp_source.html#l00266">266</a> of file <a class="el" href="ut__tde__result_8cpp_source.html">ut_tde_result.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad22116349abc9d168259de2dd2a9451b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">fftw_tde_result_0_dim_forward_list_usage&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="test"><dt><b><a class="el" href="test.html#_test000048">Test:</a></b></dt><dd>Verify that we can create a 0 dim tde_result based on a forward_list container.</dd></dl>
+
+<p>Definition at line <a class="el" href="ut__tde__result_8cpp_source.html#l00293">293</a> of file <a class="el" href="ut__tde__result_8cpp_source.html">ut_tde_result.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9273b2858211e039273b08a8a509769f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">fftw_tde_result_0_dim_list_usage&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="test"><dt><b><a class="el" href="test.html#_test000049">Test:</a></b></dt><dd>Verify that we can create a 0 dim tde_result based on a list container.</dd></dl>
+
+<p>Definition at line <a class="el" href="ut__tde__result_8cpp_source.html#l00319">319</a> of file <a class="el" href="ut__tde__result_8cpp_source.html">ut_tde_result.cpp</a>.</p>
 
 </div>
 </div>

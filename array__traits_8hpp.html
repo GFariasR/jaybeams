@@ -102,7 +102,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">array_traits.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/multi_array.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="aligned__multi__array_8hpp_source.html">jb/fftw/aligned_multi_array.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="aligned__vector_8hpp_source.html">jb/fftw/aligned_vector.hpp</a>&gt;</code><br />
+<code>#include &lt;boost/multi_array.hpp&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div>
 <p><a href="array__traits_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -110,11 +112,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:structjb_1_1detail_1_1array__traits"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejb_1_1detail.html#structjb_1_1detail_1_1array__traits">jb::detail::array_traits&lt; container_type &gt;</a></td></tr>
-<tr class="memdesc:structjb_1_1detail_1_1array__traits"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define traits for array-like containers.  <a href="namespacejb_1_1detail.html#structjb_1_1detail_1_1array__traits">More...</a><br /></td></tr>
+<tr class="memdesc:structjb_1_1detail_1_1array__traits"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias element type stored on a container.  <a href="namespacejb_1_1detail.html#structjb_1_1detail_1_1array__traits">More...</a><br /></td></tr>
 <tr class="separator:structjb_1_1detail_1_1array__traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structjb_1_1detail_1_1aligned__container"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejb_1_1detail.html#structjb_1_1detail_1_1aligned__container">jb::detail::aligned_container&lt; value_type, container_type &gt;</a></td></tr>
+<tr class="memdesc:structjb_1_1detail_1_1aligned__container"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias array_type based on the container_type shape to store value_type.  <a href="namespacejb_1_1detail.html#structjb_1_1detail_1_1aligned__container">More...</a><br /></td></tr>
+<tr class="separator:structjb_1_1detail_1_1aligned__container"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structjb_1_1detail_1_1array__traits_3_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejb_1_1detail.html#structjb_1_1detail_1_1array__traits_3_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4">jb::detail::array_traits&lt; boost::multi_array&lt; T, K, A &gt; &gt;</a></td></tr>
-<tr class="memdesc:structjb_1_1detail_1_1array__traits_3_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define traits for boost::multi_array&lt;&gt; containers.  <a href="namespacejb_1_1detail.html#structjb_1_1detail_1_1array__traits_3_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4">More...</a><br /></td></tr>
+<tr class="memdesc:structjb_1_1detail_1_1array__traits_3_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias element type stored on a boost::multi_array&lt;&gt; containers.  <a href="namespacejb_1_1detail.html#structjb_1_1detail_1_1array__traits_3_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4">More...</a><br /></td></tr>
 <tr class="separator:structjb_1_1detail_1_1array__traits_3_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacejb_1_1detail.html#structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4">jb::detail::aligned_container&lt; value_type, boost::multi_array&lt; T, K, A &gt; &gt;</a></td></tr>
+<tr class="memdesc:structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias array_type based on the boost::multi_array type shape to store value_type.  <a href="namespacejb_1_1detail.html#structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4">More...</a><br /></td></tr>
+<tr class="separator:structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -132,23 +140,23 @@ Functions</h2></td></tr>
 <tr class="separator:a298ceb1d8c3d4102ff6b08005c5911c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbab3993de93a91c38c1aa9bce19b13e"><td class="memTemplParams" colspan="2">template&lt;typename container_type &gt; </td></tr>
 <tr class="memitem:abbab3993de93a91c38c1aa9bce19b13e"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1detail.html#abbab3993de93a91c38c1aa9bce19b13e">jb::detail::nsamples</a> (container_type const &amp;a)</td></tr>
-<tr class="memdesc:abbab3993de93a91c38c1aa9bce19b13e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the elements in the last dimension.  <a href="namespacejb_1_1detail.html#abbab3993de93a91c38c1aa9bce19b13e">More...</a><br /></td></tr>
+<tr class="memdesc:abbab3993de93a91c38c1aa9bce19b13e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the elements in the last dimension of a vector-like container.  <a href="namespacejb_1_1detail.html#abbab3993de93a91c38c1aa9bce19b13e">More...</a><br /></td></tr>
 <tr class="separator:abbab3993de93a91c38c1aa9bce19b13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68495c1c705a168ba9e3d7ed7e3214d0"><td class="memTemplParams" colspan="2">template&lt;typename container_type &gt; </td></tr>
 <tr class="memitem:a68495c1c705a168ba9e3d7ed7e3214d0"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1detail.html#a68495c1c705a168ba9e3d7ed7e3214d0">jb::detail::array_shape</a> (container_type const &amp;a)</td></tr>
-<tr class="memdesc:a68495c1c705a168ba9e3d7ed7e3214d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the shape of the array in a form suitable for construction.  <a href="namespacejb_1_1detail.html#a68495c1c705a168ba9e3d7ed7e3214d0">More...</a><br /></td></tr>
+<tr class="memdesc:a68495c1c705a168ba9e3d7ed7e3214d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the shape of the container in a form suitable for construction of a vector-like container.  <a href="namespacejb_1_1detail.html#a68495c1c705a168ba9e3d7ed7e3214d0">More...</a><br /></td></tr>
 <tr class="separator:a68495c1c705a168ba9e3d7ed7e3214d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed6c23779f668fcb9955c65b06b2cbde"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K, typename A &gt; </td></tr>
 <tr class="memitem:aed6c23779f668fcb9955c65b06b2cbde"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1detail.html#aed6c23779f668fcb9955c65b06b2cbde">jb::detail::element_count</a> (boost::multi_array&lt; T, K, A &gt; const &amp;a)</td></tr>
-<tr class="memdesc:aed6c23779f668fcb9955c65b06b2cbde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of elements.  <a href="namespacejb_1_1detail.html#aed6c23779f668fcb9955c65b06b2cbde">More...</a><br /></td></tr>
+<tr class="memdesc:aed6c23779f668fcb9955c65b06b2cbde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of elements for boost::multi_array&lt;&gt; containers.  <a href="namespacejb_1_1detail.html#aed6c23779f668fcb9955c65b06b2cbde">More...</a><br /></td></tr>
 <tr class="separator:aed6c23779f668fcb9955c65b06b2cbde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0cd11e4c81a2a948cc292f69b0b2cad"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K, typename A &gt; </td></tr>
 <tr class="memitem:aa0cd11e4c81a2a948cc292f69b0b2cad"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1detail.html#aa0cd11e4c81a2a948cc292f69b0b2cad">jb::detail::nsamples</a> (boost::multi_array&lt; T, K, A &gt; const &amp;a)</td></tr>
-<tr class="memdesc:aa0cd11e4c81a2a948cc292f69b0b2cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of elements in the last dimension.  <a href="namespacejb_1_1detail.html#aa0cd11e4c81a2a948cc292f69b0b2cad">More...</a><br /></td></tr>
+<tr class="memdesc:aa0cd11e4c81a2a948cc292f69b0b2cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of elements in the last dimension for boost::multi_array&lt;&gt; containers.  <a href="namespacejb_1_1detail.html#aa0cd11e4c81a2a948cc292f69b0b2cad">More...</a><br /></td></tr>
 <tr class="separator:aa0cd11e4c81a2a948cc292f69b0b2cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a547f011e8c89c8f6f424bf6c07e49fce"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K, typename A &gt; </td></tr>
 <tr class="memitem:a547f011e8c89c8f6f424bf6c07e49fce"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1detail.html#a547f011e8c89c8f6f424bf6c07e49fce">jb::detail::array_shape</a> (boost::multi_array&lt; T, K, A &gt; const &amp;a)</td></tr>
-<tr class="memdesc:a547f011e8c89c8f6f424bf6c07e49fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the shape of the array in a form suitable for construction.  <a href="namespacejb_1_1detail.html#a547f011e8c89c8f6f424bf6c07e49fce">More...</a><br /></td></tr>
+<tr class="memdesc:a547f011e8c89c8f6f424bf6c07e49fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the shape of the container in a form suitable for construction of a boost::multi_array&lt;&gt; containers.  <a href="namespacejb_1_1detail.html#a547f011e8c89c8f6f424bf6c07e49fce">More...</a><br /></td></tr>
 <tr class="separator:a547f011e8c89c8f6f424bf6c07e49fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/><h2 class="groupheader">Class Documentation</h2>
@@ -164,7 +172,7 @@ Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename container_type&gt;<br />
 struct jb::detail::array_traits&lt; container_type &gt;</h3>
 
-<p>Define traits for array-like containers. </p>
+<p>Alias element type stored on a container. </p>
 <p>The generic version implements the class assuming std::vector&lt;&gt; or any similar container. We provide specializations for other types (such as boost::multi_array&lt;&gt;) to be able to operate on them generically.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -173,7 +181,7 @@ struct jb::detail::array_traits&lt; container_type &gt;</h3>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00020">20</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00023">23</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
@@ -182,6 +190,42 @@ struct jb::detail::array_traits&lt; container_type &gt;</h3>
 element_type</td>
 <td class="fielddoc">
 Define the type of the elements in the container. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structjb_1_1detail_1_1aligned__container" id="structjb_1_1detail_1_1aligned__container"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct jb::detail::aligned_container</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename value_type, typename container_type&gt;<br />
+struct jb::detail::aligned_container&lt; value_type, container_type &gt;</h3>
+
+<p>Alias array_type based on the container_type shape to store value_type. </p>
+<p>The generic version implements the class assuming std::vector&lt;&gt; or any similar container. We provide specializations for other types (such as boost::multi_array&lt;&gt;) to be able to operate on them generically.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">value_type</td><td>the type to store on the aligned_container_type </td></tr>
+    <tr><td class="paramname">array_type</td><td>the type of container, typically std::vector&lt;&gt; </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00041">41</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a404a4700392e8a85183250325168c2a0"></a>typedef typename <br class="typebreak" />
+aligned_vector&lt; value_type &gt;</td>
+<td class="fieldname">
+array_type</td>
+<td class="fielddoc">
+</td></tr>
 </table>
 
 </div>
@@ -198,9 +242,18 @@ Define the type of the elements in the container. </td></tr>
 <div class="textblock"><h3>template&lt;typename T, std::size_t K, typename A&gt;<br />
 struct jb::detail::array_traits&lt; boost::multi_array&lt; T, K, A &gt; &gt;</h3>
 
-<p>Define traits for boost::multi_array&lt;&gt; containers. </p>
+<p>Alias element type stored on a boost::multi_array&lt;&gt; containers. </p>
+<p>Provides specializations for a boost multi array container to be able to operate on them generically.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>the type stored by the boost::multi_array container </td></tr>
+    <tr><td class="paramname">K</td><td>boost multi array dimensionality </td></tr>
+    <tr><td class="paramname">A</td><td>an Allocator type for type T allocator storage </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00047">47</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00096">96</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
 </div><table class="fieldtable">
 <tr><th colspan="3">Class Members</th></tr>
 <tr><td class="fieldtype">
@@ -210,6 +263,45 @@ struct jb::detail::array_traits&lt; boost::multi_array&lt; T, K, A &gt; &gt;</h3
 element_type</td>
 <td class="fielddoc">
 Define the type of the elements in the array. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4" id="structjb_1_1detail_1_1aligned__container_3_01value__type_00_01boost_1_1multi__array_3_01T_00_01K_00_01A_01_4_01_4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct jb::detail::aligned_container&lt; value_type, boost::multi_array&lt; T, K, A &gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;typename value_type, typename T, std::size_t K, typename A&gt;<br />
+struct jb::detail::aligned_container&lt; value_type, boost::multi_array&lt; T, K, A &gt; &gt;</h3>
+
+<p>Alias array_type based on the boost::multi_array type shape to store value_type. </p>
+<p>Provides specializations for a boost multi array container to be able to operate on them generically.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">value_type</td><td>the type to store on the aligned_container_type </td></tr>
+    <tr><td class="paramname">T</td><td>the type stored by the boost::multi_array container </td></tr>
+    <tr><td class="paramname">K</td><td>boost multi array dimensionality </td></tr>
+    <tr><td class="paramname">A</td><td>an Allocator type for type T allocator storage </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="array__traits_8hpp_source.html#l00114">114</a> of file <a class="el" href="array__traits_8hpp_source.html">array_traits.hpp</a>.</p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Class Members</th></tr>
+<tr><td class="fieldtype">
+<a class="anchor" id="a1107ea42ca9078e29f498dbc1ed67064"></a>typedef typename <br class="typebreak" />
+aligned_multi_array<br class="typebreak" />
+&lt; value_type, K &gt;</td>
+<td class="fieldname">
+array_type</td>
+<td class="fielddoc">
+Define the type of the elements in the container. </td></tr>
 </table>
 
 </div>

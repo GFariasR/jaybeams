@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>JayBeams: jb/testing/check_complex_close_enough.hpp File Reference</title>
+<title>JayBeams: jb/testing/check_close_enough.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -99,15 +99,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">check_complex_close_enough.hpp File Reference</div>  </div>
+<div class="title">check_close_enough.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;boost/multi_array.hpp&gt;</code><br />
+<code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;complex&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
 </div>
-<p><a href="check__complex__close__enough_8hpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="check__close__enough_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -120,30 +122,30 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a3a461ce7dc6947a8a452d94010ae48b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__complex__close__enough_8hpp.html#a3a461ce7dc6947a8a452d94010ae48b9">JB_TESTING_MAX_DIFFERENCES_PRINTED</a>&#160;&#160;&#160;8</td></tr>
+<tr class="memitem:a3a461ce7dc6947a8a452d94010ae48b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__close__enough_8hpp.html#a3a461ce7dc6947a8a452d94010ae48b9">JB_TESTING_MAX_DIFFERENCES_PRINTED</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:a3a461ce7dc6947a8a452d94010ae48b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a51cd9a4af36e91adf96772bdc8dd41f8"><td class="memTemplParams" colspan="2">template&lt;typename real &gt; </td></tr>
-<tr class="memitem:a51cd9a4af36e91adf96772bdc8dd41f8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1testing.html#a51cd9a4af36e91adf96772bdc8dd41f8">jb::testing::close_enough</a> (real actual, real expected, int tol)</td></tr>
-<tr class="memdesc:a51cd9a4af36e91adf96772bdc8dd41f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare floating point values with some tolerance.  <a href="namespacejb_1_1testing.html#a51cd9a4af36e91adf96772bdc8dd41f8">More...</a><br /></td></tr>
-<tr class="separator:a51cd9a4af36e91adf96772bdc8dd41f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2761efe5ff1f5c8e20c94e1046033c75"><td class="memTemplParams" colspan="2">template&lt;typename real &gt; </td></tr>
-<tr class="memitem:a2761efe5ff1f5c8e20c94e1046033c75"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1testing.html#a2761efe5ff1f5c8e20c94e1046033c75">jb::testing::close_enough</a> (std::complex&lt; real &gt; actual, std::complex&lt; real &gt; expected, int tol=1)</td></tr>
-<tr class="memdesc:a2761efe5ff1f5c8e20c94e1046033c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare complex number values with some tolerance.  <a href="namespacejb_1_1testing.html#a2761efe5ff1f5c8e20c94e1046033c75">More...</a><br /></td></tr>
-<tr class="separator:a2761efe5ff1f5c8e20c94e1046033c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa697bf9aa0ed0e580e4d5c651dd4427e"><td class="memTemplParams" colspan="2">template&lt;typename real &gt; </td></tr>
-<tr class="memitem:aa697bf9aa0ed0e580e4d5c651dd4427e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1testing.html#aa697bf9aa0ed0e580e4d5c651dd4427e">jb::testing::close_enough</a> (real actual[2], real expected[2], int tol=1)</td></tr>
-<tr class="memdesc:aa697bf9aa0ed0e580e4d5c651dd4427e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare complex number (as arrays of size 2) values with some tolerance.  <a href="namespacejb_1_1testing.html#aa697bf9aa0ed0e580e4d5c651dd4427e">More...</a><br /></td></tr>
-<tr class="separator:aa697bf9aa0ed0e580e4d5c651dd4427e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026133e5a091fd8636681b469ba43edf"><td class="memTemplParams" colspan="2">template&lt;typename value_t , typename std::enable_if&lt; std::is_integral&lt; value_t &gt;::value &gt;::type *  = nullptr&gt; </td></tr>
+<tr class="memitem:a026133e5a091fd8636681b469ba43edf"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1testing.html#a026133e5a091fd8636681b469ba43edf">jb::testing::check_close_enough</a> (value_t num_a, value_t num_b, int tol)</td></tr>
+<tr class="memdesc:a026133e5a091fd8636681b469ba43edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given two numbers of the same integer type check if the difference is within a given tolerance.  <a href="namespacejb_1_1testing.html#a026133e5a091fd8636681b469ba43edf">More...</a><br /></td></tr>
+<tr class="separator:a026133e5a091fd8636681b469ba43edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adadefce6e18404e7f8575842cc05fd5e"><td class="memTemplParams" colspan="2">template&lt;typename value_t &gt; </td></tr>
+<tr class="memitem:adadefce6e18404e7f8575842cc05fd5e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1testing.html#adadefce6e18404e7f8575842cc05fd5e">jb::testing::check_close_enough</a> (std::complex&lt; value_t &gt; com_a, std::complex&lt; value_t &gt; com_b, int tol=1)</td></tr>
+<tr class="memdesc:adadefce6e18404e7f8575842cc05fd5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given two complex numbers of the same value type check if the difference is within a given tolerance.  <a href="namespacejb_1_1testing.html#adadefce6e18404e7f8575842cc05fd5e">More...</a><br /></td></tr>
+<tr class="separator:adadefce6e18404e7f8575842cc05fd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a465de59cf5740ecc1899670ff1e82de1"><td class="memTemplParams" colspan="2">template&lt;typename value_t &gt; </td></tr>
+<tr class="memitem:a465de59cf5740ecc1899670ff1e82de1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1testing.html#a465de59cf5740ecc1899670ff1e82de1">jb::testing::check_close_enough</a> (value_t com_a[2], value_t com_b[2], int tol=1)</td></tr>
+<tr class="memdesc:a465de59cf5740ecc1899670ff1e82de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare complex number (as arrays of size 2) values with some tolerance.  <a href="namespacejb_1_1testing.html#a465de59cf5740ecc1899670ff1e82de1">More...</a><br /></td></tr>
+<tr class="separator:a465de59cf5740ecc1899670ff1e82de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b7e2edacbea63616c91ba14874e176c"><td class="memTemplParams" colspan="2">template&lt;typename floating &gt; </td></tr>
 <tr class="memitem:a0b7e2edacbea63616c91ba14874e176c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1testing.html#a0b7e2edacbea63616c91ba14874e176c">jb::testing::check_small</a> (floating t, double small)</td></tr>
-<tr class="memdesc:a0b7e2edacbea63616c91ba14874e176c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify that a floating point value is "close enough" to 0.  <a href="namespacejb_1_1testing.html#a0b7e2edacbea63616c91ba14874e176c">More...</a><br /></td></tr>
+<tr class="memdesc:a0b7e2edacbea63616c91ba14874e176c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify that a floating point value is "close enough" to a small number.  <a href="namespacejb_1_1testing.html#a0b7e2edacbea63616c91ba14874e176c">More...</a><br /></td></tr>
 <tr class="separator:a0b7e2edacbea63616c91ba14874e176c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2948723340c62d5802695a560c1cef47"><td class="memTemplParams" colspan="2">template&lt;typename real &gt; </td></tr>
 <tr class="memitem:a2948723340c62d5802695a560c1cef47"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1testing.html#a2948723340c62d5802695a560c1cef47">jb::testing::check_small</a> (std::complex&lt; real &gt; t, double small)</td></tr>
-<tr class="memdesc:a2948723340c62d5802695a560c1cef47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify that a complex number is "close enough" to 0.  <a href="namespacejb_1_1testing.html#a2948723340c62d5802695a560c1cef47">More...</a><br /></td></tr>
+<tr class="memdesc:a2948723340c62d5802695a560c1cef47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify that a complex number is "close enough" to a small number.  <a href="namespacejb_1_1testing.html#a2948723340c62d5802695a560c1cef47">More...</a><br /></td></tr>
 <tr class="separator:a2948723340c62d5802695a560c1cef47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae90ad9a1678a875ce6ffe9ccd36df176"><td class="memTemplParams" colspan="2">template&lt;typename precision_t &gt; </td></tr>
 <tr class="memitem:ae90ad9a1678a875ce6ffe9ccd36df176"><td class="memTemplItemLeft" align="right" valign="top">std::complex&lt; precision_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1testing.html#ae90ad9a1678a875ce6ffe9ccd36df176">jb::testing::format</a> (precision_t v[2])</td></tr>
@@ -165,6 +167,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ad972872e3b17e20fdfaf0a42ac59c467"><td class="memTemplItemLeft" align="right" valign="top">real&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1testing.html#ad972872e3b17e20fdfaf0a42ac59c467">jb::testing::relative_error</a> (real actual[2], real expected[2])</td></tr>
 <tr class="memdesc:ad972872e3b17e20fdfaf0a42ac59c467"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the relative error between two complex numbers in FFTW representation.  <a href="namespacejb_1_1testing.html#ad972872e3b17e20fdfaf0a42ac59c467">More...</a><br /></td></tr>
 <tr class="separator:ad972872e3b17e20fdfaf0a42ac59c467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2938af2a800aa36f1475bdc4fcd62a0"><td class="memTemplParams" colspan="2">template&lt;typename collection_t &gt; </td></tr>
+<tr class="memitem:ab2938af2a800aa36f1475bdc4fcd62a0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1testing.html#ab2938af2a800aa36f1475bdc4fcd62a0">jb::testing::check_collection_close_enough</a> (collection_t const &amp;a, collection_t const &amp;b, int tol=1, int max_differences_printed=<a class="el" href="check__close__enough_8hpp.html#a3a461ce7dc6947a8a452d94010ae48b9">JB_TESTING_MAX_DIFFERENCES_PRINTED</a>)</td></tr>
+<tr class="memdesc:ab2938af2a800aa36f1475bdc4fcd62a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given two collections of numbers of the same value type, find the differences that are out of a given tolerance and report them via Boost.Test functions.  <a href="namespacejb_1_1testing.html#ab2938af2a800aa36f1475bdc4fcd62a0">More...</a><br /></td></tr>
+<tr class="separator:ab2938af2a800aa36f1475bdc4fcd62a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeec6b8e9b530daea62d3d67d9f23b1c"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t K&gt; </td></tr>
+<tr class="memitem:abeec6b8e9b530daea62d3d67d9f23b1c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1testing.html#abeec6b8e9b530daea62d3d67d9f23b1c">jb::testing::check_collection_close_enough</a> (boost::multi_array&lt; T, K &gt; const &amp;a, boost::multi_array&lt; T, K &gt; const &amp;b, int tol=1, int max_differences_printed=<a class="el" href="check__close__enough_8hpp.html#a3a461ce7dc6947a8a452d94010ae48b9">JB_TESTING_MAX_DIFFERENCES_PRINTED</a>)</td></tr>
+<tr class="memdesc:abeec6b8e9b530daea62d3d67d9f23b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization for boost::multi_array type.  <a href="namespacejb_1_1testing.html#abeec6b8e9b530daea62d3d67d9f23b1c">More...</a><br /></td></tr>
+<tr class="separator:abeec6b8e9b530daea62d3d67d9f23b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e0968a9f821693176302d60fa0292f"><td class="memTemplParams" colspan="2">template&lt;typename value_t &gt; </td></tr>
+<tr class="memitem:a53e0968a9f821693176302d60fa0292f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacejb_1_1testing.html#a53e0968a9f821693176302d60fa0292f">jb::testing::check_collection_close_enough</a> (std::size_t size, value_t const *a, value_t const *b, int tol=1, int max_differences_printed=<a class="el" href="check__close__enough_8hpp.html#a3a461ce7dc6947a8a452d94010ae48b9">JB_TESTING_MAX_DIFFERENCES_PRINTED</a>)</td></tr>
+<tr class="memdesc:a53e0968a9f821693176302d60fa0292f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given two collections of integers, floating point or complex numbers find the differences that are out of a given tolerance and report them via Boost.Test functions.  <a href="namespacejb_1_1testing.html#a53e0968a9f821693176302d60fa0292f">More...</a><br /></td></tr>
+<tr class="separator:a53e0968a9f821693176302d60fa0292f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a3a461ce7dc6947a8a452d94010ae48b9"></a>
@@ -177,7 +191,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="check__complex__close__enough_8hpp_source.html#l00163">163</a> of file <a class="el" href="check__complex__close__enough_8hpp_source.html">check_complex_close_enough.hpp</a>.</p>
+<p>Definition at line <a class="el" href="check__close__enough_8hpp_source.html#l00015">15</a> of file <a class="el" href="check__close__enough_8hpp_source.html">check_close_enough.hpp</a>.</p>
 
 </div>
 </div>
