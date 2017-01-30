@@ -18,6 +18,7 @@ var searchData=
   ['stock_5fdirectory',['stock_directory',['../namespacejb_1_1itch5_1_1testing.html#a0696483daf5c0a4c1bd822c044b02d9c',1,'jb::itch5::testing']]],
   ['stock_5ftrading_5faction',['stock_trading_action',['../namespacejb_1_1itch5_1_1testing.html#a0efd062c987215121be83a4f23bfd2d8',1,'jb::itch5::testing']]],
   ['strtonum',['strtonum',['../namespacejb.html#a4b84daf04d6ce26f0e29600156117f1d',1,'jb']]],
+  ['sum_5fsquare',['sum_square',['../namespacejb_1_1testing.html#ae63bcb4ac8373773037a0904b4f90bac',1,'jb::testing']]],
   ['summary',['summary',['../classjb_1_1histogram.html#abafffad3f8c6a9f5120aa50336adca9b',1,'jb::histogram::summary()'],['../structjb_1_1testing_1_1microbenchmark__base_1_1summary.html#a154e35c0abfd665253f7c47d6de3186e',1,'jb::testing::microbenchmark_base::summary::summary()'],['../structjb_1_1testing_1_1microbenchmark__base_1_1summary.html#a43f952a834654ed6b6469fb0ebf33eaa',1,'jb::testing::microbenchmark_base::summary::summary(results const &amp;arg)']]],
   ['swap',['swap',['../classjb_1_1config__attribute.html#a5b46e73426cdde61d7e30fcd4ce4e325',1,'jb::config_attribute::swap()'],['../classjb_1_1config__object.html#aa9038a66dd6b5b949c3833ecc16b8ba8',1,'jb::config_object::swap()']]],
   ['symbols',['symbols',['../classjb_1_1itch5_1_1compute__book.html#a7316730233961d0e0b0ee12ed0b63254',1,'jb::itch5::compute_book']]],

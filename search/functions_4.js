@@ -21,5 +21,5 @@ var searchData=
   ['exit_5fstatus',['exit_status',['../classjb_1_1usage.html#a41f66e8d056d13a36beee6e013f5f677',1,'jb::usage']]],
   ['expected_5fts',['expected_ts',['../namespacejb_1_1itch5_1_1testing.html#a5d2c530bc50d648ad5481cda88591ba7',1,'jb::itch5::testing']]],
   ['explicit_5fcuts_5fbinning',['explicit_cuts_binning',['../classjb_1_1explicit__cuts__binning.html#a71320fc108c2850324165dcfd2d5464b',1,'jb::explicit_cuts_binning::explicit_cuts_binning(std::initializer_list&lt; sample_type &gt; const &amp;il)'],['../classjb_1_1explicit__cuts__binning.html#a01485901f689ee957063548d88ea4ddc',1,'jb::explicit_cuts_binning::explicit_cuts_binning(iterator_t begin, iterator_t end)']]],
-  ['extrapolate_5ftimeseries',['extrapolate_timeseries',['../namespacejb_1_1testing.html#ae2512b2f0492857a7a2b786fe2daf36c',1,'jb::testing']]]
+  ['extrapolate_5ftimeseries',['extrapolate_timeseries',['../namespacejb_1_1testing.html#a0039c0fa8ef40ad5838d4c3d155fd489',1,'jb::testing']]]
 ];

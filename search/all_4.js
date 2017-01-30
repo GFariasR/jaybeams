@@ -60,6 +60,6 @@ var searchData=
   ['extract_5fvalue_5ftype',['extract_value_type',['../namespacejb.html#structjb_1_1extract__value__type',1,'jb']]],
   ['extract_5fvalue_5ftype_3c_20std_3a_3acomplex_3c_20t_20_3e_20_3e',['extract_value_type&lt; std::complex&lt; T &gt; &gt;',['../namespacejb.html#structjb_1_1extract__value__type_3_01std_1_1complex_3_01T_01_4_01_4',1,'jb']]],
   ['extrapolate_5fperiodic',['extrapolate_periodic',['../structjb_1_1testing_1_1extrapolate__periodic.html',1,'jb::testing']]],
-  ['extrapolate_5ftimeseries',['extrapolate_timeseries',['../namespacejb_1_1testing.html#ae2512b2f0492857a7a2b786fe2daf36c',1,'jb::testing']]],
+  ['extrapolate_5ftimeseries',['extrapolate_timeseries',['../namespacejb_1_1testing.html#a0039c0fa8ef40ad5838d4c3d155fd489',1,'jb::testing']]],
   ['extrapolate_5fwith_5fzeroes',['extrapolate_with_zeroes',['../structjb_1_1testing_1_1extrapolate__with__zeroes.html',1,'jb::testing']]]
 ];

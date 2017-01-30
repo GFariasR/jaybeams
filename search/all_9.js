@@ -32,6 +32,7 @@ var searchData=
   ['jb_5fdefaults_5fmicrobenchmark_5fiterations',['JB_DEFAULTS_microbenchmark_iterations',['../microbenchmark__config_8cpp.html#a904d9e9064083ecd77457fd134d22eb4',1,'microbenchmark_config.cpp']]],
   ['jb_5fdefaults_5fmicrobenchmark_5freconfigure_5fthread',['JB_DEFAULTS_microbenchmark_reconfigure_thread',['../microbenchmark__config_8cpp.html#a8dad67a5078ddcbeb03adfaeef38f9e5',1,'microbenchmark_config.cpp']]],
   ['jb_5fdefaults_5fmicrobenchmark_5fsize',['JB_DEFAULTS_microbenchmark_size',['../microbenchmark__config_8cpp.html#a082e633def5cbfd84e1dc5eab70326de',1,'microbenchmark_config.cpp']]],
+  ['jb_5fdefaults_5fmicrobenchmark_5ftimeseries',['JB_DEFAULTS_microbenchmark_timeseries',['../microbenchmark__config_8cpp.html#ac69ddb4433ef97fcb90f5d8ae7788877',1,'microbenchmark_config.cpp']]],
   ['jb_5fdefaults_5fmicrobenchmark_5fverbose',['JB_DEFAULTS_microbenchmark_verbose',['../microbenchmark__config_8cpp.html#a2f2535ae27f433e8afaa113d42a71c22',1,'microbenchmark_config.cpp']]],
   ['jb_5fdefaults_5fmicrobenchmark_5fwarmup_5fiterations',['JB_DEFAULTS_microbenchmark_warmup_iterations',['../microbenchmark__config_8cpp.html#afe41fbc54d6f32ec0a4e86d11ca22bd1',1,'microbenchmark_config.cpp']]],
   ['jb_5fitch5_5fdefault_5fbm_5forder_5fbook_5fmax_5fp999_5fdelta',['JB_ITCH5_DEFAULT_bm_order_book_max_p999_delta',['../bm__order__book_8cpp.html#ad63ad941174d7b93eae29f58ec1be13d',1,'bm_order_book.cpp']]],
@@ -77,7 +78,7 @@ var searchData=
   ['opencl',['opencl',['../namespacejb_1_1opencl.html',1,'jb']]],
   ['protocol',['protocol',['../namespacejb_1_1itch5_1_1protocol.html',1,'jb::itch5']]],
   ['tde',['tde',['../namespacejb_1_1tde.html',1,'jb']]],
-  ['testing',['testing',['../namespacejb_1_1testing.html',1,'jb']]],
   ['testing',['testing',['../namespacejb_1_1itch5_1_1testing.html',1,'jb::itch5']]],
+  ['testing',['testing',['../namespacejb_1_1testing.html',1,'jb']]],
   ['yaml',['yaml',['../namespacejb_1_1yaml.html',1,'jb']]]
 ];

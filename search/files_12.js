@@ -1,6 +1,7 @@
 var searchData=
 [
   ['tde_5fresult_2ehpp',['tde_result.hpp',['../tde__result_8hpp.html',1,'']]],
+  ['tde_5fsquare_5fsum_2ehpp',['tde_square_sum.hpp',['../tde__square__sum_8hpp.html',1,'']]],
   ['thread_5fconfig_2ecpp',['thread_config.cpp',['../thread__config_8cpp.html',1,'']]],
   ['thread_5fconfig_2ehpp',['thread_config.hpp',['../thread__config_8hpp.html',1,'']]],
   ['thread_5fsetup_5fwrapper_2ehpp',['thread_setup_wrapper.hpp',['../thread__setup__wrapper_8hpp.html',1,'']]],

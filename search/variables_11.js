@@ -7,6 +7,7 @@ var searchData=
   ['thread_5fconfig_5fscheduler',['thread_config_scheduler',['../namespacejb_1_1defaults.html#ab1b75b050de299d7a0084cc908d64e63',1,'jb::defaults']]],
   ['tid_5f',['tid_',['../namespacejb_1_1log.html#ad92b3bc538c77ac05a774cb3ac9c05f9',1,'jb::log']]],
   ['time_5fpoint',['time_point',['../classjb_1_1itch5_1_1message__handler__concept.html#a6914100f32d23b02408ac05cc90a677a',1,'jb::itch5::message_handler_concept']]],
+  ['timeseries',['timeseries',['../classjb_1_1testing_1_1microbenchmark__config.html#a85b50b0fe1b98c4588bbb9aab628ad30',1,'jb::testing::microbenchmark_config::timeseries()'],['../namespacejb_1_1testing_1_1defaults.html#a20c722f90570b76a2cc1780d75dbce2b',1,'jb::testing::defaults::timeseries()']]],
   ['timestamp',['timestamp',['../namespacejb_1_1itch5.html#ad92760ff287cf318b3e6cbe3523ead61',1,'jb::itch5::message_header::timestamp()'],['../namespacejb_1_1log.html#a2fcd5ab31c65f0cf2f00e6912ee445ba',1,'jb::log::TimeStamp()']]],
   ['tk_5fbegin_5ftop_5f',['tk_begin_top_',['../classjb_1_1itch5_1_1array__based__book__side.html#a35b6ea51020c723162db31ed69c2c6d8',1,'jb::itch5::array_based_book_side']]],
   ['tk_5fempty_5fquote',['tk_empty_quote',['../classjb_1_1itch5_1_1array__based__book__side.html#a392b2abe1a194efad2ea962180e1d035',1,'jb::itch5::array_based_book_side']]],
